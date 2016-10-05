@@ -23,3 +23,21 @@ If all goes well, you should see an output like this:
 ## Debugging
 Sometimes we need debugging our code by setting breakpoints and evaluate values of variables and more. Fortunately, Visual Studio Code is our friend. Set a breakpoint in your code and hit F5 to start debugging. The first time you debug an application Visual Studio Code will prompt you to set the platform. Select **Node.js** and you should be good to go.
 
+## "I want more"
+Some people (no names) are not comfortable concatinating string using the **"+"** sign. To avoid this you might consider prototyping the *String* object with a **format** function:
+
+```js
+   String.prototype.format = function() {
+    var args = arguments;
+    return this.replace(/{(\d+)}/g, function(match, number) { 
+      return typeof args[number] != 'undefined'
+        ? args[number]
+        : match
+      ;
+    });
+  };
+```
+**Usage:**
+```js
+"{0} is dead, but {1} is alive! {0} {2}".format("ASP", "ASP.NET")
+```
