@@ -79,7 +79,7 @@ var bodyParser   = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 ```
-To add the body to the products collection, use the **.push** function on the collection. Use the **res.send** to return the number of products in the collection,
+To add the body to the products collection, use the **.push** function on the collection. Use the **res.send** to return the number of products in the collection (Eg res.send({count:products.length});)
 
 #### Try it out
 Using Postman, change the VERB from GET to POST and remove the query from the URI (*"?id=2"*). Set the body to:
