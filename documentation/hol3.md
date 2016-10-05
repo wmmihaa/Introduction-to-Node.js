@@ -84,7 +84,11 @@ To add the body to the products collection, use the **.push** function on the co
 #### Try it out
 Using Postman, change the VERB from GET to POST and remove the query from the URI (*"?id=2"*). Set the body to:
 ```js
-{id:4, name:"Fransk Nougat", price:10.5}
+{
+    "id": 4,
+    "name": "Fransk norgat",
+    "price": 8.2
+}
 ```
 Hit **Send**, and verify that your response indicates the increased number of products. Change the VERB back to GET and make another request to receive all products of the collection (now four). 
 
