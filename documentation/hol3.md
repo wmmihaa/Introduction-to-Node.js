@@ -62,6 +62,7 @@ var wanted = items.filter(function (item)
     return (item.age == 18);
 });
 ```
-Use a the same approach to find the matching product
+Use a the same approach to find the matching product.
 
-
+#### Try it out
+Again, use Postman to verify that you can query using http://localhost:8080/products?id=3.
