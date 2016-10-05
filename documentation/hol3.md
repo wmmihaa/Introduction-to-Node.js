@@ -93,5 +93,5 @@ Quering for a product that doesn't exist will cause an exception. Update the GET
 ```js
 res.status(404).send('Product not found');
 ```
-### Optional 1
+### Optional 2
 Add a DELETE handler 
