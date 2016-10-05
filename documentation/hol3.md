@@ -66,3 +66,32 @@ Use a the same approach to find the matching product.
 
 #### Try it out
 Again, use Postman to verify that you can query using http://localhost:8080/products?id=3.
+
+### Add a request handler to add a new product
+To add an item using REST you should use the **POST** verb. And just as the *app* object has **get** function, it also has a **post** function. 
+Start by adding another handler, but this time handling post request. As we’re still working with products, we should keep the URI the same.
+#### Handling POST operations
+POST operations are handled differently than GET (and DELETE) operations in that it needs to receive a payload (a product in our case). The payload can be accessed through the req.**body** field, but we’d still run into format issues, where express can’t parse the inbound JSON body. To resolve this, add the following lines after the declaration of the **app** object (line 3).
+
+```js
+var bodyParser   = require('body-parser');
+// to support JSON-encoded request bodies
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+```
+To add the body to the products collection, use the **.push** function on the collection. Use the **res.send** to return the number of products in the collection,
+
+#### Try it out
+Using Postman, change the VERB from GET to POST and remove the query from the URI (*"?id=2"*). Set the body to:
+```js
+{id:4, name:"Fransk Nougat", price:10.5}
+```
+Hit **Send**, and verify that your response indicates the increased number of products. Change the VERB back to GET and make another request to receive all products of the collection (now four). 
+
+### Optional 1
+Quering for a product that doesn't exist will cause an exception. Update the GET handler to respond with status code 404:
+```js
+res.status(404).send('Product not found');
+```
+### Optional 1
+Add a DELETE handler 
