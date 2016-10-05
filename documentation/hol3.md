@@ -37,3 +37,31 @@ When you're done, shut it down using **CTRL + C**.
 ### Add a request handler to query for all products
 You already have one request handler listening to the root. This one was called when you browsed to localhost:8080. To prove this, set a breakpoint inside the *get* handler and start the application using VS Code (F5). Refresh the browser and examine the **req** and **res** objects.
 
+We are now ready to add another event handler. This handler is going to listen to http://localhost:8080**/products** and (of course) return all products in the collection. Copy the existing handler and change the uri to match the expected request.
+Next, use the response object (*res*) to send back the entire **products** collection.
+
+#### Try it out
+This time try it out using **Postman**. Open Postman and type *http://localhost:8080/products* into the address field, and hit *Send*.
+
+### Add a request handler to query for a specific product
+This time we’re going to let the user query a specific product by adding a *query parameter*. Since the uri to this call is the same as the one we just created, we need to update it to support a request like *http://localhost:8080/products?id=3*. However we still want to handle calls without query parameters so we’ll have to add a condition.
+Start by checking if the query exists by using the **req.query.id**:
+```js
+if (req.query.id) {
+    // return single product
+}
+else {
+    // return all products
+    res.send(products);
+}
+```
+To query for a single item from a collection, you can use this syntax:
+```js
+var wanted = items.filter(function (item)
+{
+    return (item.age == 18);
+});
+```
+Use a the same approach to find the matching product
+
+
