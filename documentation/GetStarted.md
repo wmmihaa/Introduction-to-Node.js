@@ -8,3 +8,6 @@ Browse to https://nodejs.org and download and install the latest version of Node
 ###Visual Studio Code
 Proceed by installing Visual Studio Code, which you can download from https://code.visualstudio.com/download. 
 After completed, familiarize yourself with some of the [basics](https://code.visualstudio.com/docs/editor/codebasics).
+
+###Chrome and Postman
+
