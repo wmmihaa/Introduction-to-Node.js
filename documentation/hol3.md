@@ -3,17 +3,37 @@
 ## Description
 In this lab you are going to build a Web API providing a RESTful interface to the *products* collection. To do this you’re going to use an NPM package called **express** which is one of the most commonly used web frameworks. We are going to cover more about **express** in the next module, but in this module we’re going to cover the basics.
 ## Setup
-* Continue with HOL1
-* Navigate to https://www.npmjs.com/
-* Search for colors, and select the first one (from marak)
-* Read through the **Usage** section
+* Create a folder and name it HOL3
+* Open a command prompt and navigate to the folder
+* Type ”npm init” and answer all questions by hitting [enter]
+* Type ”code [your folder] index.js”
+* Navigate to [hol3.js]( https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/documentation/hol3.js) and copy the content to your index.js file
 * Open a command prompt from VS Code by hitting CTRL+Shift+C
-* Type **npm install colors --save**
-* In VS Code, note that the package has been imported to the **nodes_modules** folder
-* In VS Code, open the *package.json* file and note that the *dependencies* section has been updated with the installed package
+* Import package dependancies by typing **npm install express,body-parser --save**
+
+## Before you begin
+As explained earlier, **express** is a web server framework provided through NPM. You will use **express** to create a web application that will listen for incoming requests. This can easily be done by:
+### 1.	Create the web application
+```js
+var express = require('express');
+var app = express();
+```
+### 2.	Tell the web application to listen for some input:
+```js
+app.get('/', function (req, res) {
+    res.send('<h1>Welcome to HOL #3</h1>')
+});
+```
+### 3.	Set the app to listen on a port:
+```js
+app.listen(8080);
+```
+In the next module, we’re going to look into all this in more depth, but for now this is all we need to get started.
 
 ## Exercise
-In the *index.js* file, go through all outputs (*console.log*) and set an appropriate color. 
+Once again, some work has already been created for you (you're welcome). Examine the content you passed in to the *index,js* file. Try it out by opening a console using **CTRL+Shift+C** and type **node index.js**. Next, open a browser and navigate to http://localhost:8080.
+When you're done, shut it down using **CTRL + C**.
 
-###Tip
-To avoid having to set the color on each segment of outputted text (*Eg “Hello “ + name + “!”*), assemble the whole string into one variable and set the color on the variable.
+### Add a request handler to query for all products
+You already have one request handler listening to the root. This one was called when you browsed to localhost:8080. To prove this, set a breakpoint inside the *get* handler and start the application using VS Code (F5). Refresh the browser and examine the **req** and **res** objects.
+
