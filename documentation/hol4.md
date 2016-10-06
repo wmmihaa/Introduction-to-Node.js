@@ -23,3 +23,15 @@ You are now going to make four tests:
 &nbsp;&nbsp;*should return an http status 200*  
 &nbsp;&nbsp;*should return four items*  
 
+## Setup
+* Use the same project as in previous lag (HOL3)
+* Open a command prompt from VS Code by hitting CTRL+Shift+C
+* Import package dependencies by typing **npm install mocha,chai --save**
+* Open the **package.json** file in VS Code and add a **test** to the **script** section:
+```js
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec" 
+  },
+```
+* Create a forlder in VS project called **test**
+* Add a file called **unittest.js** and copy the content from 
