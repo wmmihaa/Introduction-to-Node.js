@@ -34,4 +34,5 @@ You are now going to make four tests:
   },
 ```
 * Create a forlder in VS project called **test**
-* Add a file called **unittest.js** and copy the content from 
+* Add a file called **unittest.js** and copy below into the file:
+
