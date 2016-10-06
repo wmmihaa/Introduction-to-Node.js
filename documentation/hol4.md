@@ -44,6 +44,41 @@ In this lab you rare going to use three references:
 * **chai**&nbsp;&nbsp;Used to validate the result
 * **hol3.js**&nbsp;&nbsp;Used start the service
 
+```js
+var expect = require('chai').expect;
+var request = require('request');
+require('../hol3.js');
+```
+
+### Create your first test
+Copy the test description below into your unit test:
+```js
+describe("Get all products", function () {
+    var result; // Used to store the result
+    // First we call the service
+    before(function (done) {
+        // Configure the call with content-type and uri
+        var options = {
+            headers: { "Content-Type": "application/json"},
+            uri: 'http://localhost:8080/products',
+            json: {}
+        };
+        // Make call
+        request.get(options, function (err, res, body) {
+            result = {err, res, body};
+            done();
+        });
+        
+    });
+    it('should execute without errors', function (done) {
+       expect(result.err).to.equal(null);
+       done();
+    });
+});
+```
+
+
+
 
 
 
