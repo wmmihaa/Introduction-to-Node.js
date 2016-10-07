@@ -53,8 +53,8 @@ collection.findOne( {id:id}, function(err, document) {
 
 **Hint:** The incoming query parameter is a string, which you’ll need to convert using the *Number()* function. 
  
+## Try it out
+Use Postman as you did in Hol3.
 
-
-
-
-
+## Optional
+Update your unit test to work with the new data.Don't forget to update the require statement at the top to use *hol5.js*
