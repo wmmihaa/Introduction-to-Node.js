@@ -25,13 +25,20 @@ app.get('/', function (req, res) {
 ```js
 app.listen(8080);
 ```
-Open a browser and navigate to http://localhost:8080.
+Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to http://localhost:8080.
 
 In the next module, we’re going to look into all this in more depth, but for now this is all we need to get started.
 
 ## Exercise
-Once again, some work has already been created for you (you're welcome). Examine the content you passed in to the *hol3,js* file. Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to http://localhost:8080.
-When you're done, shut it down using **CTRL + C**.
+Before we beging, we need some data. For now, we'll just use a static collection of products:
+```js
+var products = [
+    {id:1, name:"Fazer Kexchoklad", price:12.4},
+    {id:2, name:"Snickers", price:8.2},
+    {id:3, name:"Dajm", price:19.0}
+];
+```
+Copy the segment above after the initial declarations in the hol3.js file.
 
 ### Add a request handler to query for all products
 You already have one request handler listening to the root. This one was called when you browsed to localhost:8080. To prove this, set a breakpoint inside the *get* handler and start the application using VS Code (F5). Refresh the browser and examine the **req** and **res** objects.
