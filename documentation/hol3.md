@@ -28,7 +28,7 @@ app.listen(8080);
 In the next module, we’re going to look into all this in more depth, but for now this is all we need to get started.
 
 ## Exercise
-Once again, some work has already been created for you (you're welcome). Examine the content you passed in to the *index,js* file. Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to http://localhost:8080.
+Once again, some work has already been created for you (you're welcome). Examine the content you passed in to the *hol3,js* file. Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to http://localhost:8080.
 When you're done, shut it down using **CTRL + C**.
 
 ### Add a request handler to query for all products
