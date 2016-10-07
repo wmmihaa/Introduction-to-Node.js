@@ -1,4 +1,3 @@
-
 var express = require('express');
 var app = express();
 var bodyParser   = require('body-parser');
@@ -32,7 +31,5 @@ app.post("/products", function(req,res){
     products.push(req.body);
     res.send({count:products.length});
 })
-
-//var wanted = items.filter( function(item){return (item.age==18);} );
 
 app.listen(8080);
