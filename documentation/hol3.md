@@ -51,7 +51,7 @@ This time try it out using **Postman**. Open Postman and type *http://localhost:
 
 ### Add a request handler to query for a specific product
 This time we’re going to let the user query a specific product by adding a *query parameter*. Since the uri to this call endpoint is the same as the one we just created, we need to update it to support a request like *http://localhost:8080/products?id=3* but still handle *http://localhost:8080/products*. 
-Start by checking if the query exists by using the **req.query.id**:
+Update the callback function by checking if the query exists by using the **req.query.id**:
 ```js
 if (req.query.id) {
     // return single product
