@@ -33,13 +33,14 @@ You are now going to make four tests:
     "test": "./node_modules/.bin/mocha --reporter spec" 
   },
 ```
+
 ## Exercise
 ### Create the test
 * Create a forlder in VS project called **test**
-* Add a file called **unittest.js** andopen the file in VS Code
+* Add a file called **unittest.js** and open the file in VS Code
 
 ### Import references
-In this lab you rare going to use three references:
+In this lab you are going to use three references:
 * **request**&nbsp;&nbsp;Used make the call to the *product* service
 * **chai**&nbsp;&nbsp;Used to validate the result
 * **hol3.js**&nbsp;&nbsp;Used start the service
@@ -49,6 +50,7 @@ var expect = require('chai').expect;
 var request = require('request');
 require('../hol3.js');
 ```
+Copy the above into the *unittest.js* file.
 
 ### Create your first test
 Copy the test description below into your unit test:
@@ -76,6 +78,9 @@ describe("Get all products", function () {
     });
 });
 ```
+## Try it out.
+Open a console/terminal and type **npm test**
+
 ### Create the other tests
 * Copy the whole describe section for each test. 
 * Update the options object with uri and json (payload).
