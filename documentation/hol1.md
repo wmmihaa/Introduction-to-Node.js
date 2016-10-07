@@ -11,7 +11,7 @@ In this lab you will create a function to buy a product and withdraw the price f
 * Navigate to [hol1.js]( https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/documentation/hol1.js) and copy the content to your hol1.js file
 
 ## Exercise
-The recommended way to go about this lab is from the top down, starting with the **withDraw** function, then the **calculateVAT** function and finish up with the **buy** function. Each function has comments about what is expected to be done.
+The recommended way to go about this lab is from the top down, starting with the **withDraw** function, then the **calculateVAT** function and finish up with the **buy** function. __Each function has comments about what is expected to be done.__
 ## Running the script
 To run the sample, open a command prompt/terminal and navigate to the directory you created in the beginning of the exercise. Type **node hol1.js**.
 If all goes well, you should see an output like this:
