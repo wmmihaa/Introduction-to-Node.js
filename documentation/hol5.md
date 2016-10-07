@@ -13,20 +13,21 @@ MongoDB is one of the most commonly used databases for Node.js, and during this 
 You should now have MongoDB server started and you should be able to browse to http://localhost:28017/ using your favorite browser.
 
 ## Exercise 
-In the **hol5.js** file, remove the declaration of the *products* collection and add:
+1. Create a new file called *hol5.js* and copy the entire content from *hol3.js*
+2. Remove the declaration of the *products* collection and add:
 ```js
 var mongoDb = require('mongodb');
 var url = "mongodb://localhost:27017/hol5Db"
 var products;
 ```
 ### Create the database connection
-Next add the section below:
+Continue by adding the section below:
 ```js
 mongoDb.MongoClient.connect(url, function(err,db){
      products = db.collection("products");
 });
 ```
-This statement creates a database called **hol5Db**. When successfully connected it will create a collection called "**Products**".
+This statement creates a database called **hol5Db** (if it doesn't exist). After successfully connected, it will create a collection called "**Products**".
 
 ### Update all operations
 We are now ready to update the **GET** and **POST** operations to use newly created collection. Remember that you should still respond the same way you did before…
