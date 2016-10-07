@@ -24,7 +24,7 @@ You are now going to make four tests:
 &nbsp;&nbsp;*should return four items*  
 
 ## Setup
-* Use the same project as in previous lag (HOL3)
+* Use the same project as in previous lab (hol3.js)
 * Open a command prompt from VS Code by hitting CTRL+Shift+C
 * Import package dependencies by typing **npm install mocha,chai --save**
 * Open the **package.json** file in VS Code and add a **test** to the **script** section:
