@@ -76,10 +76,7 @@ describe("Get all products", function () {
     });
 });
 ```
-
-
-
-
-
-
-
+### Create the other tests
+* Copy the whole describe section for each test. 
+* Update the options object with uri and json (payload).
+* Update the request operation to **post()** and **delete()** (if you’ve implemented it) 
