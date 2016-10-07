@@ -1,6 +1,3 @@
-
-
-
 'use strict'
 
 const VAT = 0.2;
