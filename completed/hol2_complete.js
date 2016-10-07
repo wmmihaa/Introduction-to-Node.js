@@ -1,6 +1,3 @@
-
-
-
 'use strict'
 require('colors');
 
