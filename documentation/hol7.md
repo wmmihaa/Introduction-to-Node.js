@@ -37,4 +37,4 @@ You have now configured a node on your organization, and it’s time to start it
 
 
 ### Create a flow
-![alt](https://blogical.blob.core.windows.net/microservicebus/Logosmall.png)
+![alt](https://microservicebus.blob.core.windows.net/sample/hol7_1.jpg)
