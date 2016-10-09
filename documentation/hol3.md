@@ -104,7 +104,7 @@ Using Postman, change the VERB from GET to **POST** and remove the query from th
     "price": 8.2
 }
 ```
-**IMPORTANT!** We also need to add a *Content Type* header. Clich the *Header* tab in Postman. Set the *key* to "**Content-Type**" and the value to "**application/json**".
+**IMPORTANT!** We also need to add a *Content Type* header. Click the *Header* tab in Postman. Set the *key* to "**Content-Type**" and the value to "**application/json**".
 
 Hit **Send**, and verify that your response indicates the increased number of products. Change the VERB back to GET and make another request to receive all products of the collection (now four). 
 
