@@ -68,7 +68,17 @@ The scenario you’re going to build is started by a simulated thermometer senso
 <img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
 
 #### Configure the Services
-A *Service* can run on ANY node, although in our case they’ll all run on the same one. Later, if you have time you can add more nodes and split set each service to run on different ones. 
-Right-click on each node and select **Properties** from the drop-down list. In the properties dialog, set the name of the node to the one you created earlier (Eg laptop)
+A *Service* can run on ANY node, although in our case they’ll all run on the same one. Later, if you have time you can add more nodes and set each service to run on different ones. 
+Right-click on each node set the properties and select **Properties** from the drop-down list. In the properties dialog, set the name of the node to the one you created earlier (Eg. "laptop").
+
+Continue by setting the rest of the properties according to the table below:
+Service | Property | Tab | Value
+------------ | ------------- | -------------
+Send email | From | Static properties | microservicebus.xlent.se 
+Send email | From | Static properties | microservicebus.xlent.se 
+Send email | From | Static properties | microservicebus.xlent.se 
+Send email | From | Static properties | microservicebus.xlent.se 
+
+
 
 
