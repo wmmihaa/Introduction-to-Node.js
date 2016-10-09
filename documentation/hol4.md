@@ -25,9 +25,8 @@ You are now going to make four tests:
 &nbsp;&nbsp;*should return four items*  
 
 ## Setup
-* Use the same project as in previous lab (hol3.js)
 * Open a command prompt from VS Code by hitting CTRL+Shift+C
-* Import package dependencies by typing **npm install mocha,chai --save**
+* Import package dependencies by typing **npm install mocha,chai --save-dev**
 * Open the **package.json** file in VS Code and add a **test** to the **script** section:
 ```js
   "scripts": {
@@ -37,14 +36,14 @@ You are now going to make four tests:
 
 ## Exercise
 ### Create the test
-* Create a forlder in VS project called **test**
+* Create a folder in VS project called **test**
 * Add a file called **unittest.js** and open the file in VS Code
 
 ### Import references
 In this lab you are going to use three references:
-* **request**&nbsp;&nbsp;Used make the call to the *product* service
-* **chai**&nbsp;&nbsp;Used to validate the result
-* **hol3.js**&nbsp;&nbsp;Used start the service
+* **request**&nbsp;&nbsp;HTTP client used to make the call to the *product* service
+* **chai**&nbsp;&nbsp;Used for validating the result
+* **hol3.js**&nbsp;&nbsp;The REST service you created in the previous lab 
 
 ```js
 var expect = require('chai').expect;
@@ -73,6 +72,7 @@ describe("Get all products", function () {
         });
         
     });
+    // Test the result
     it('should execute without errors', function (done) {
        expect(result.err).to.equal(null);
        done();
@@ -81,6 +81,12 @@ describe("Get all products", function () {
 ```
 ## Try it out.
 Open a console/terminal and type **npm test**
+
+### Add the additional conditions
+One down, two to go...
+~~should execute without errors~~
+* should return an http status 200
+* should return three items 
 
 ### Create the other tests
 * Copy the whole describe section for each test. 
