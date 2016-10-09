@@ -40,9 +40,11 @@ var products = [
 Copy the segment above after the initial declarations in the hol3.js file.
 
 ### Add a request handler to query for all products
-You already have one request handler listening to the root. This one was called when you browsed to localhost:8080. To prove this, set a breakpoint inside the *get* handler and start the application using VS Code (F5). Refresh the browser and examine the **req** and **res** objects.
+You already have one request handler listening to the root of your site. This one was called when you browsed to localhost:8080. To prove this, set a breakpoint inside the *get* handler and start the application using VS Code (F5). Refresh the browser and examine the **req** and **res** objects.
 
-We are now ready to add another event handler. This handler is going to listen to http://localhost:8080**/products** and return all products in the **products** collection. Copy the existing handler and change the uri to match the expected request.
+We are now ready to add another event handler. This handler is going to listen to http://localhost:8080**/products** and return all products in the **products** collection. 
+
+Copy the existing handler and change the uri to match the expected request.
 Next, use the response object (*res*) to send back the entire **products** collection.
 
 #### Try it out
@@ -84,7 +86,14 @@ var bodyParser   = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 ```
-To add the body to the products collection, use the **.push** function on the collection. Use the **res.send** to return the number of products in the collection (Eg res.send({count:products.length});)
+To add the body to the products collection, use the **.push** function on the collection, eg.
+```js
+contacts.push(johnSmith);
+```
+Use the **res.send** to return the number of products in the collection, eg.
+```js
+res.send({count:products.length});
+```
 
 #### Try it out
 Using Postman, change the VERB from GET to POST and remove the query from the URI (*"?id=2"*). Set the body to:
