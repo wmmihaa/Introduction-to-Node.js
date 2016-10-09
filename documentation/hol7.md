@@ -72,13 +72,18 @@ A *Service* can run on ANY node, although in our case they’ll all run on the s
 Right-click on each node set the properties and select **Properties** from the drop-down list. In the properties dialog, set the name of the node to the one you created earlier (Eg. "laptop").
 
 Continue by setting the rest of the properties according to the table below:
+
+
 Service | Property | Tab | Value
------------- | ------------- | -------------
+------------ | ------------- | ------------- | -------------
 Send email | From | Static properties | microservicebus.xlent.se 
 Send email | From | Static properties | microservicebus.xlent.se 
 Send email | From | Static properties | microservicebus.xlent.se 
 Send email | From | Static properties | microservicebus.xlent.se 
 
 
-
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
 
