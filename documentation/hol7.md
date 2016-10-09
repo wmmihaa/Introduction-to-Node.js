@@ -20,8 +20,9 @@ For this lab we’re going to use microServiceBus.com as our hub. So before we b
 With your organization created, you’re ready to create your first IoT scenarios. But before we begin, we need to make our device ready. Since we don't have a device, we'll use your laptop and run the device package from a command prompt/terminal. 
 * Create a new folder and name it HOL7
 * Open a command prompt/terminal and navigate to the folder
-* Type **npm install microServiceBus.node**
-This step will now install an NPM package which will serve as our generic device application.
+* Type **npm install microservicebus.node -g**
+
+This step will now install an NPM package which will serve as our generic device application. **DON'T WAIT FOR THE PACKAGE TO COMPLETE. CONTINUE WITH THE EXERCISE** 
 
 ## Exersice
 
@@ -35,10 +36,9 @@ A **Node** is the application that will run on the device. The “node” is res
 You have now configured a node on your organization, and it’s time to start it up. The NPM package you installed earlier is a generic client which hasn’t been given credentials to log in to your organization. To initiate the node…
 
 1. click the “**Generate**” button to receive a temporary code.
-2. Go back to your terminal window and navigate to HOL7/node_modules/microservicebus.node
-3. Type: **node start -c [YOUR CODE] -n [NAME OF NODE]**
+2. Open a new terminal window and type: **startnode -c [YOUR CODE] -n [NAME OF NODE]**
 ```js
-eg node start -c ABC123 -n laptop
+eg startnode -c ABC123 -n laptop
 ```
 
 The node should startup with no errors:
