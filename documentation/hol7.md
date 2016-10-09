@@ -36,7 +36,7 @@ You have now configured a node on your organization, and it’s time to start it
 
 1. click the “**Generate**” button to receive a temporary code.
 2. Go back to your terminal window and navigate to HOL7/node_modules/microservicebus.node
-3. Type: **node start -c [YOUR CODE] -n [NAME OF NODE] **
+3. Type: **node start -c [YOUR CODE] -n [NAME OF NODE]**
 ```js
 eg node start -c ABC123 -n laptop
 ```
