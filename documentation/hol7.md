@@ -97,6 +97,14 @@ message = {
 };
 ```
 
+#### Set routing condition
+Remember how we were only suppose to send email alert if the temperature exceeds a specified threshold. This is done by setting up a routing condition.
+1. Right-click the *Send email* service and select "**Routing expression**" or just double-click the "**true**" value between the *Temperature sensor* service and the *Send email* service.
+2. Type the following:
+```js
+var route = message.temp > 30 || message.temp < 10;
+```
+
 Click the **Ok** to save the script.
 
 ## Try it out
