@@ -1,13 +1,13 @@
 # Introduction to Node.js
 # HOL1 – Hello World
 ## Description
-This lab is about getting you comfortable with JavaScript. We assume you have some fundamental programming skills, and the focus will on understanding *anonymous functions* in JavaScript.
+This lab is about getting you comfortable with JavaScript. We assume you have some fundamental programming skills, and the focus will be on understanding *anonymous functions* in JavaScript.
 In this lab you will create a function to buy a product and withdraw the price from an account balance. You’ll be given an existing script as a starting point.
 ## Setup
-* Create a folder and name it *Introduction to Node.js*
+* Create a folder and name it **Introduction to Node.js**
 * Open a command prompt and navigate to the folder
-* Type ”npm init” and answer all questions by hitting [enter]
-* Type ”code [your folder] hol1.js”
+* Type ”npm init” and answer all questions by hitting **Enter**
+* Type ”code [your folder] hol1.js”, eg **code "c:\temp\Introduction to Node.js" hol1.js**
 * Navigate to [hol1.js]( https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/documentation/hol1.js) and copy the content to your hol1.js file
 
 ## Exercise
