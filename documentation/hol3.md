@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
 ```js
 app.listen(8080);
 ```
-Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to http://localhost:8080.
+Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to [http://localhost:8080](http://localhost:8080).
 
 In the next module, we’re going to look into all this in more depth, but for now this is all we need to get started.
 
