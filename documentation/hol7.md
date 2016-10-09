@@ -41,5 +41,14 @@ You have now configured a node on your organization, and it’s time to start it
 eg node start -c ABC123 -n laptop
 ```
 
+The node should startup with no errors:
+
+<img src="http://microservicebus.blob.core.windows.net/sample/hol7_node.jpg" alt="Drawing" style="height: 100px;"/>
+
+Please note that no services are started.
+
 ### Create a flow
-<img src="https://microservicebus.blob.core.windows.net/sample/hol7_1.jpg" alt="Drawing" style="height: 200px;"/>
+A **Flow** is where different devices can interact, sending messages from one device to another. This is done using **Services**. A *Service* is essentially a piece of software (JavaScript in this case) that does something useful, such as reading a sensor, saving a file or transforming a message. 
+
+<img src="https://microservicebus.blob.core.windows.net/sample/hol7_1.jpg" alt="Drawing" style="height: 100px;"/>
+
