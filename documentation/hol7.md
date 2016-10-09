@@ -83,7 +83,7 @@ Port | Security properties | 587
 User name | Security properties | **Provided by the trainer**
 Password | Security properties | **Provided by the trainer**
 
-*Note the [temp] value in the Body property. This points to the temp field of the message.
+*Note the [temp] value in the Body property. This points to the temp field of the message.*
 
 ##### JavaScript service
 The *MongoDb* service works for queries, inserts, deletes and updates, but expects a specific message for each operation. We’ll therefor use the *JavaScript* service to transform the message from the *Temperature* service to the “insert” message expected from the *MongoDb* service.
