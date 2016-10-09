@@ -98,3 +98,10 @@ message = {
 ```
 
 Click the **Ok** to save the script.
+
+## Try it out
+Click the **Save** button on the designer, and flip back to the node. Note that the node is getting restarted and is starting up all the services.
+Open a command prompt/terminal and navigate to your MongoDb forlder. 
+1. Type **mongo** to get into the mongo shell
+2. Type **use local** to set the database.
+3. Type **db["temperatures"].find()** to query for all items.
