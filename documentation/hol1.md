@@ -13,7 +13,7 @@ In this lab you will create a function to buy a product and withdraw the price f
 ## Exercise
 For this lab, you are going to implement three functions and it's recommended to go about this by implementing the functions from the top down, starting with the **withDraw** function, then the **calculateVAT** function and finish up with the **buy** function. __Each function has comments about what is expected to be done.__ Brackets "[]" are used in the comments to refere to fields and paramaters.
 ## Running the script
-To run the sample, open a command prompt/terminal (**CTRL+Shift+C**) and navigate to the directory you created in the beginning of the exercise. Type **node hol1.js**.
+To run the sample, open a command prompt/terminal from Visual Studio Code by using (**CTRL+Shift+C**) Type **node hol1.js**.
 If all goes well, you should see an output like this:
 
 **You bought a Snickers for 8.20 SEK**  
