@@ -86,8 +86,8 @@ Open a console/terminal and type **npm test**
 One down, two to go...
 
 * ~~should execute without errors~~
-* should return an http status 200
-* should return three items 
+* should return an http status 200 (*res.statusCode*)
+* should return three items (*body.length*)
 
 ### Create the other tests
 * Copy the whole describe section for each test. 
