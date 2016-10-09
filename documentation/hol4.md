@@ -84,6 +84,7 @@ Open a console/terminal and type **npm test**
 
 ### Add the additional conditions
 One down, two to go...
+
 ~~should execute without errors~~
 * should return an http status 200
 * should return three items 
