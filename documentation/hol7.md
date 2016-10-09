@@ -52,6 +52,19 @@ A **Flow** is where different devices can interact, sending messages from one de
 
 Begin with navigating to the **Flow page**, and click the **Create new** button. Give it a name, such as HOL7.
 
+After the *Flow* has been created, a flow designer will appear. On the left you’ll see *Services* grouped in **Inbound-**, **Outbound-** and **Other Services**. *Inbound* services are services that starts the flow, such as reading off a sensor. *Outbound* services are generally sending data somewhere else, as to a database. Sometime you need to write some custom script for which you can find the *Script* service among the *Other Services* category.
+
+The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
+
+The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
+
+1. Start out by dragging a **Simulator Temperature Sensor** from the toolbox (*Inbound*) to the designer canvas.
+2. Next drag the following Services to the canvas and arrange the according to the image below. Attach them together by dragging the “handle* of each service to the next: 
+* **JavaScript** service (*Other Services*)  
+* **MongDB Outbound Service**
+* **Send mail** service (*Outbound Services*)  
+
+
 <img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
 
 
