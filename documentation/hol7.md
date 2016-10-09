@@ -71,9 +71,7 @@ The scenario you’re going to build is started by a simulated thermometer senso
 A *Service* can run on ANY node, although in our case they’ll all run on the same one. Later, if you have time you can add more nodes and set each service to run on different ones. 
 Right-click on each node set the properties and select **Properties** from the drop-down list. In the properties dialog, set the name of the node to the one you created earlier (Eg. "laptop").
 
-Continue by setting the rest of the properties according to the table below:
-
-##### Send email service
+##### Configure email service
 Property | Tab | Value
 ------------- | ------------- | -------------
 From | Static properties | microservicebus.xlent.se 
@@ -86,3 +84,17 @@ User name | Security properties | **Provided by the trainer**
 Password | Security properties | **Provided by the trainer**
 
 *Note the [temp] value in the Body property. This points to the temp field of the message.
+
+##### JavaScript service
+The *MongoDb* service works for queries, inserts, deletes and updates, but expects a specific message for each operation. We’ll therefor use the *JavaScript* service to transform the message from the *Temperature* service to the “insert” message expected from the *MongoDb* service.
+
+Right-click the **JavaScript** service and select **Script**. In the editor, type **nosql** and hit **CTRL+Space**, and select **nosqlinsert**. Set the *collection* field to "**temperatures**":
+```js
+message = {
+  'type': 'INSERT',
+  'collection': 'temperature',
+  'data': message
+};
+```
+
+Click the **Ok** to save the script.
