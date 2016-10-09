@@ -60,10 +60,10 @@ The scenario you’re going to build is started by a simulated thermometer senso
 
 1. Start out by dragging a **Simulator Temperature Sensor** from the toolbox (*Inbound*) to the designer canvas.
 2. Next drag the following Services to the canvas and arrange the according to the image below. Attach them together by dragging the “handle* of each service to the next: 
+
 * **JavaScript** service (*Other Services*)  
 * **MongDB Outbound Service**
 * **Send mail** service (*Outbound Services*)  
-
 
 <img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
 
