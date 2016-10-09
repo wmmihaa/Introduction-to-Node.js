@@ -33,8 +33,10 @@ A **Node** is the application that will run on the device. The “node” is res
 You have now configured a node on your organization, and it’s time to start it up. The NPM package you installed earlier is a generic client which hasn’t been given credentials to log in to your organization. To initiate the node…
 1. click the “**Generate**” button to receive a temporary code.
 2. Go back to your terminal window and navigate to HOL7/node_modules/microservicebus.node
-3. Type: **node start -c [YOUR CODE] -n [NAME OF NODE (eg “laptop”]
-
+3. Type: **node start -c [YOUR CODE] -n [NAME OF NODE] ***
+```js
+eg node start -c ABC123 -n laptop
+```
 
 ### Create a flow
 <img src="https://microservicebus.blob.core.windows.net/sample/hol7_1.jpg" alt="Drawing" style="height: 200px;"/>
