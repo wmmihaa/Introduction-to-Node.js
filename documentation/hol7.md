@@ -37,4 +37,4 @@ You have now configured a node on your organization, and it’s time to start it
 
 
 ### Create a flow
-<img src="https://microservicebus.blob.core.windows.net/sample/hol7_1.jpg" alt="Drawing" style="width: 200px;"/>
+<img src="https://microservicebus.blob.core.windows.net/sample/hol7_1.jpg" alt="Drawing" style="height: 200px;"/>
