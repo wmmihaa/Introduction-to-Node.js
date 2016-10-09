@@ -59,17 +59,17 @@ The scenario you’re going to build is started by a simulated thermometer senso
 The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
 
 1. Start out by dragging a **Simulator Temperature Sensor** from the toolbox (*Inbound*) to the designer canvas.
-2. Next drag the following Services to the canvas and arrange the according to the image below. Attach them together by dragging the “handle* of each service to the next: 
+2. Next drag the following Services to the canvas and arrange the according to the image below. Attach them together by dragging the “handle" of each service to the next: 
 
 * **JavaScript** service (*Other Services*)  
-* **MongDB Outbound Service**
+* **MongoDb** service (*Outbound Services*) 
 * **Send mail** service (*Outbound Services*)  
 
 <img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
 
 #### Configure the Services
 A *Service* can run on ANY node, although in our case they’ll all run on the same one. Later, if you have time you can add more nodes and set each service to run on different ones. 
-Right-click on each node set the properties and select **Properties** from the drop-down list. In the properties dialog, set the name of the node to the one you created earlier (Eg. "laptop").
+Right-click on each node and select **Properties** from the drop-down list. In the properties dialog, set the **Name** of the node to the one you created earlier (Eg. "laptop").
 
 ##### Configure email service
 Property | Tab | Value
