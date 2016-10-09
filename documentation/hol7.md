@@ -73,6 +73,8 @@ A *Service* can run on ANY node, although in our case they’ll all run on the s
 Double-click on each node. In the properties dialog, set the **Name** of the node to the one you created earlier (Eg. "laptop").
 
 ##### Configure email service
+The Send Email service require some additional settings. Double-click the *Send Email* service and set properties on each tab.
+
 Property | Tab | Value
 ------------- | ------------- | -------------
 From | Static properties | microservicebus.xlent.se 
