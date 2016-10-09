@@ -73,17 +73,16 @@ Right-click on each node set the properties and select **Properties** from the d
 
 Continue by setting the rest of the properties according to the table below:
 
+##### Send email service
+Property | Tab | Value
+------------- | ------------- | -------------
+From | Static properties | microservicebus.xlent.se 
+To | Static properties | **YOUR EMAIL** 
+Subject | Static properties | ALERT 
+Body | Static properties | The temperature is now [temp]
+SMTP server | Security properties | smtp.sendgrid.net
+Port | Security properties | 587
+User name | Security properties | **Provided by the trainer**
+Password | Security properties | **Provided by the trainer**
 
-Service | Property | Tab | Value
------------- | ------------- | ------------- | -------------
-Send email | From | Static properties | microservicebus.xlent.se 
-Send email | From | Static properties | microservicebus.xlent.se 
-Send email | From | Static properties | microservicebus.xlent.se 
-Send email | From | Static properties | microservicebus.xlent.se 
-
-
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
+*Note the [temp] value in the Body property. This points to the temp field of the message.
