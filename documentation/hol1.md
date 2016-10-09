@@ -21,7 +21,7 @@ If all goes well, you should see an output like this:
 **Your balance is 91.80 SEK**  
 
 ## Debugging
-Sometimes we need to debug our code by setting breakpoints and evaluate values of variables and more. Fortunately, Visual Studio Code is our friend. Set a breakpoint in your code and hit F5 to start debugging. The first time you debug an application Visual Studio Code will prompt you to set the platform. Select **Node.js** and you should be good to go.
+Sometimes we need to debug our code by setting breakpoints and evaluate values of variables and more. Fortunately, Visual Studio Code is our friend. Set a breakpoint in your code and hit F5 to start debugging. The first time you debug an application, Visual Studio Code will prompt you to set the platform. Select **Node.js**, close the *launch.js* and hit **F5** again.
 
 ## "I want more"
 Some people (no names) are not comfortable concatinating string using the **"+"** sign. To avoid this you might consider prototyping the *String* object with a **format** function:
