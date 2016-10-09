@@ -31,6 +31,7 @@ A **Node** is the application that will run on the device. The “node” is res
 1. Navigate to the [Nodes]( https://www.microservicebus.com/Nodes) page using the menu on the upper left corner.
 2. Click the “Create new node” button, and give it a name, eg “laptop”
 3. Click “Create”
+
 You have now configured a node on your organization, and it’s time to start it up. The NPM package you installed earlier is a generic client which hasn’t been given credentials to log in to your organization. To initiate the node…
 
 1. click the “**Generate**” button to receive a temporary code.
