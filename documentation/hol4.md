@@ -1,7 +1,8 @@
 # Introduction to Node.js
 # HOL4 – Unit testing
 ## Description
-We are now ready to test the API you created in lab 3. In fact, we could/should have created these tests BEFORE we developed the API. But as it wouldn’t have made much sense from a learning perspective we’ll make the tests after developed the API.
+We are now ready to test the API you created in lab 3. In fact, we could/should have created these tests BEFORE we developed the API. But as it wouldn’t have made much sense from a learning perspective we’ll make the tests after developing the API (...at least we're testing it right?).
+
 You are now going to make four tests: 
 
 **1. Get all products**  
