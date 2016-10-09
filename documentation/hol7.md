@@ -50,5 +50,9 @@ Please note that no services are started.
 ### Create a flow
 A **Flow** is where different devices can interact, sending messages from one device to another. This is done using **Services**. A *Service* is essentially a piece of software (JavaScript in this case) that does something useful, such as reading a sensor, saving a file or transforming a message. 
 
+Begin with navigating to the **Flow page**, and click the **Create new** button. Give it a name, such as HOL7.
+
 <img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
+
+
 
