@@ -22,3 +22,20 @@ With your organization created, you’re ready to create your first IoT scenario
 * Open a command prompt/terminal and navigate to the folder
 * Type **npm install microServiceBus.node**
 This step will now install an NPM package which will serve as our generic device application.
+
+## Exersice
+
+### Create a node
+A **Node** is the application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*.
+1. Navigate to the [Nodes]( https://www.microservicebus.com/Nodes) page using the menu on the upper left corner.
+2. Click the “Create new node” button, and give it a name, eg “laptop”
+3. Click “Create”
+You have now configured a node on your organization, and it’s time to start it up. The NPM package you installed earlier is a generic client which hasn’t been given credentials to log in to your organization. To initiate the node…
+1. click the “**Generate**” button to receive a temporary code.
+2. Go back to your terminal window and navigate to HOL7/node_modules/microservicebus.node
+3. Type: **node start -c [YOUR CODE] -n [NAME OF NODE (eg “laptop”]
+
+
+### Create a flow
+
+![alt](https://microservicebus.blob.core.windows.net/sample/hol7_1.jpg)
