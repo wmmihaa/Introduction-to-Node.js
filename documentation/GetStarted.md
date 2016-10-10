@@ -21,7 +21,7 @@ MongoDB is one of the most commonly used databases for Node.js and in some of th
 
 ###microServicebus.com <img src="https://microservicebus.blob.core.windows.net/sample/msb.png" alt="microServiceBus"/>
 
-The tutorial includes one lab on IoT (Internet Of Things), where you’ll be using [microServiceBus.com]( https://microServiceBus.com). To speed things up prepare yourself by create and account and organization if you don’t already have one.
+The tutorial includes one lab on IoT (Internet Of Things), where you’ll be using [microServiceBus.com]( https://microServiceBus.com). To speed things up, prepare yourself by creating and account and organization if you don’t already have one.
 
 1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
