@@ -101,7 +101,7 @@ Right-click the **JavaScript** service and select **Script**. In the editor, typ
 ```js
 message = {
   'type': 'INSERT',
-  'collection': 'temperature',
+  'collection': 'temperatures',
   'data': message
 };
 ```
