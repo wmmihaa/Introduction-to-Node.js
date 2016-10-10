@@ -68,6 +68,11 @@ The scenario you’re going to build is started by a simulated thermometer senso
 
 <img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
 
+1. *Temperature readings are received from the simulated thermometer sensor*
+2. *The temperature readings is transformed to a MongoDb Insert Message*
+3. *The message is inserted into the MongoDb database*
+4. *If the temperature is greater than 30 or less than 10 an email is sent to the administrator*
+
 #### Configure the Services
 A *Service* can run on ANY node, although in our case they’ll all run on the same one. Later, if you have time you can add more nodes and set each service to run on different ones. 
 
