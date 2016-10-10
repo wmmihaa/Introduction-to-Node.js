@@ -86,13 +86,13 @@ Property | Tab | Value
 From | Static properties | microservicebus.xlent.se 
 To | Static properties | **YOUR EMAIL** 
 Subject | Static properties | ALERT 
-Body | Static properties | The temperature is now [temp] (*1*)
+Body | Static properties | The temperature is now [temp]
 SMTP server | Security properties | smtp.sendgrid.net
 Port | Security properties | 587
 User name | Security properties | **Provided by the trainer**
 Password | Security properties | **Provided by the trainer**
 
- (*1*) *Note the [temp] value in the Body property. This points to the temp field of the message.*
+*Note the [temp] value in the Body property. This points to the temp field of the message.*
 
 ##### JavaScript service
 The *MongoDb* service works for queries, inserts, deletes and updates, but expects a specific message for each operation. We’ll therefor use the *JavaScript* service to transform the message from the *Temperature* service to the “insert” message expected from the *MongoDb* service.
