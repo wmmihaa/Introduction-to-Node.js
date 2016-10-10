@@ -6,7 +6,7 @@ Welcome to this *Introduction to Node.js* course. Before we begin you need to in
 ###Node.js <img src="https://microservicebus.blob.core.windows.net/sample/nodejs-256.png" alt="Node.js"/>
 Browse to https://nodejs.org and download and install the latest version of Node.js. Once installed, you should be able to run Node by opening a command prompt/terminal and type **“node”**. You are now in node, and can start typing JavaScript! Try typing **“console.log('Hello from Node.js')”** to verify it works. You can exit by closing the terminal or by hitting **CTRL+C**.
 
-###Visual Studio Code ###Node.js <img src="https://microservicebus.blob.core.windows.net/sample/svcode.png" alt="VS Code"/>
+###Visual Studio Code <img src="https://microservicebus.blob.core.windows.net/sample/svcode.png" alt="VS Code"/>
 
 Proceed by installing Visual Studio Code, which you can download from https://code.visualstudio.com/download. 
 After completed, familiarize yourself with some of the [basics](https://code.visualstudio.com/docs/editor/codebasics).
