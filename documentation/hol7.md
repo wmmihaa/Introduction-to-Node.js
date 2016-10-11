@@ -130,3 +130,74 @@ The way to get around this, is to provide yet another function in the controller
         });
 ```
 This handler calls the **getAggregates** function of the data helper object that you created earlier. And different from the first hander, it does not render the response through the view engine. This is because this is a Web API, very similar to the one you created in lab 5.
+
+### Update controllers
+Before we create the view we need to update the **./controllers/index.js** file to include our newly created **temperaturesController**.
+Open the file and add the controller and call the *init* function just like the other two existing controllers do.
+
+### Create View
+You are almost done ;)
+1. In the *views* folder, create a new folder called “**temperatures**”. 
+2. Copy the the **./views/home/index.vash** and paste it into the new *temperatures* folder.
+3. Remove the existing *div* and replace it with:
+```html
+<div class="container-fluid gridContainer">
+      <div id="chart-container"></div>
+</div>
+```
+*The **chart-container** div is a place holder for our chart.*
+#### Scripts (client side)
+Although it’s nice to use the same language (JavaScript) on both server side and client side, it can sometimes be confusing…
+After the *div* tag you just added, add the **script** section below:
+```html
+   <script>
+        
+        (function init(){
+         
+        })();
+
+   </script>
+```
+The chart library we’re going to use is called *FusionChart*. And as with any other charts we need to configure it with things like *title*, *colors*, *axixs names* etc, etc… All this is done in a *datasource* we call “**ds**”:
+```js
+var ds = {"chart": {
+            "caption": "Temperatures/hour",
+            "xAxisName": "Hour",
+            "yAxisName": "Temeratures",
+            "paletteColors": "#5de40b",
+            "bgColor": "#ffffff",
+            "showXAxisLine": "1",
+            "axisLineAlpha": "25",
+            "divLineAlpha": "10",
+            "showValues": "1",
+            "decimals": "2",
+        },
+        "data": []
+    };
+```
+Copy the declaration above onto the **init** function.
+The last step is to call our controller. This is done using the JQuery **get** function:
+```js
+$.get('./temperatures/aggregates', function(data){
+    
+    ds.data = data.readings;
+
+    FusionCharts.ready(function () {
+        var salesChart = new FusionCharts({
+            type: 'area2d',
+            renderAt: 'chart-container',
+            width: '100%',
+            height: '300',
+            dataFormat: 'json',
+            dataSource: ds
+        })
+        .render();
+    });
+
+});
+```
+Note that the **get** function calls the **temperatures/aggregates** API function you added to the *temperaturesController*, and that it has a callback with the response.
+When the callback is executed, we set the *data* property of the chart data source, and call the *FusionCharts.ready* function to render the chart for us.
+
+## Try it out
+Browse to [http://localhost:3000/ temperatures](http://localhost:3000/ temperatures) to see if it worked.
