@@ -3,6 +3,7 @@
 ## Description
 MongoDB is one of the most commonly used databases for Node.js, and during this lab we are going to move the static **products** collection to one in MongoDB. Preceding this exercise, you should have MongoDB installed, but before we start you’ll need to do some setup.
 ## Before you begin
+* Install the **mongodb** npm package (you know how right?)
 * Create a folder called *MongoDBLab*
 * Open the MongoDB installation folder and browse the bin folder (*C:\Program Files\MongoDB\Server\3.2\bin on Windows*)
 * Copy all files to the folder you created in step 1
