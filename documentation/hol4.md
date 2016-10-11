@@ -79,8 +79,10 @@ describe("Get all products", function () {
     });
 });
 ```
+This test only evaluates one condition (*should execute without errors*);
+
 ## Try it out.
-Open a console/terminal and type **npm test**. Proceed to the next test if it was executed successfully.
+Open a console/terminal and type **npm test**. Proceed to the next condition if it was executed successfully.
 
 ### Add the additional conditions
 One down, two to go...
