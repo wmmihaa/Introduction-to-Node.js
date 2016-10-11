@@ -93,5 +93,5 @@ One down, two to go...
 
 ### Create the other tests
 * Copy the whole describe section for each test. 
-* Update the options object with uri and json (the json field is only the payload of POST operations).
+* Update the options object with **uri** and **json** (the json field is only used or the payload of POST operations).
 * Update the request operation to **post()** and **delete()** (if you’ve implemented it) 
