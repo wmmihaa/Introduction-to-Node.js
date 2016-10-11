@@ -28,7 +28,7 @@ mongoDb.MongoClient.connect(url, function(err,db){
      products = db.collection("products");
 });
 ```
-This statement creates a database called **hol5Db** (if it doesn't exist). After successfully connected, it will create a collection called "**Products**".
+This statement creates a database called **hol5Db** (if it doesn't exist). After successfully connected, it will create a collection called "**products**".
 
 ### Update all operations
 We are now ready to update the **GET** and **POST** operations to use the newly created collection. Remember that you should still respond the same way you did before…
