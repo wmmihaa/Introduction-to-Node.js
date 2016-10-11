@@ -80,7 +80,7 @@ describe("Get all products", function () {
 });
 ```
 ## Try it out.
-Open a console/terminal and type **npm test**
+Open a console/terminal and type **npm test**. Proceed to the next test if it was executed successfully.
 
 ### Add the additional conditions
 One down, two to go...
