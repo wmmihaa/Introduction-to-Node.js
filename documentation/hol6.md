@@ -56,9 +56,9 @@ This means we can go this in the view:
 In the productController we pass the *product* collection to the view, and can therefore iterate over the array:
 ```html
 @model.products.forEach(function(product){
-            <div class="row gridRow">
-                <div class="col-xs-4 test1 ">@product.name</div>
-                <div class="col-xs-3 test2 ">@product.price</div>
-            </div>
-        })
+  <div class="row gridRow">
+     <div class="col-xs-4 test1 ">@product.name</div>
+     <div class="col-xs-3 test2 ">@product.price</div>
+  </div>
+})
 ```
