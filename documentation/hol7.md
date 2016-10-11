@@ -67,7 +67,6 @@ In this lab you are going to add a view to display a diagram over the temperatur
 2. Create a new controller called **temperaturesController**
 4. Update the ./controllers/index.js to include the new controller
 5. Create a new view called **temperatures**
-6. Update the master view with references to *fusioncharts* which is the library we’ll use to display the diagram.
 
 ### Update data helper object
 This time we’re going to use MongoDb, so we need to add references to the package. Open the **./data/index.js** file, and add the following at the very top of the document:
