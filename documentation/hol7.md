@@ -1,125 +1,63 @@
 # Introduction to Node.js
-# HOL7 – Building and IoT solution using Node.js
+# HOL7 – Building an MVC web site using Node.js
 ## Description
-**IoT**, or *Internet Of Things* is about small devices capturing data and pushing that data to some central hub. From the hub the data might get forwarded to some data store or reporting service where its later analyzed and put to good use. This course won’t be able to cover everything about **IoT** it will give you a general understanding.
-Node.js is great for IoT since it can run on almost every platform, from small devices to data centers. Another great advantage is the massive community and the NPM infrastructure which makes it easy to find implementations of how to read and interact with different sensors. Sensors are typically what feeds the device with data. 
-Since we don’t have and sensors (nor devices for that matter) for this tutorial, we’re going to rely on simulated sensors.
 
-##Setup
-### Create account and organization
-For this lab we’re going to use microServiceBus.com as our hub. So before we begin we need to create an account and an organization:
+## Setup
+* In Visual Studio Code click *File* -> *Open Folder...*, browse to the **Introduction-to-Node.js\HOL7 folder** and click *Select*.
+* Open a command prompt/terminal and type **npm express, mongodb vash --save**
 
-1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
-2. Fill out your details, accept the terms and conditions and click “**Register**”. 
-3. Check your mail box, open the confirmation mail and click the “**Register**” link. 
-4. Log in to the microServiceBus.com site using the credentials you supplied in step 2. 
-5. Select option 2 and provide a name and description of your organization. 
-6. Uncheck the “*Add sample scenarios*” checkbox and click *Create organization* 
+## Familiarize yourself with the project
+For this exercise we begin with an existing site that has been created for you. In VS Code, start by hitting **F5** and browse to [http://localhost:3000]( http://localhost:3000) to make sure the site is working.
 
-### Download the device package
-With your organization created, you’re ready to create your first IoT scenarios. But before we begin, we need to make our device ready. Since we don't have a device, we'll use your laptop and run the device package from a command prompt/terminal. 
-* Create a new folder and name it HOL7
-* Open a command prompt/terminal and navigate to the folder
-* Type **npm install microservicebus.node -g**
-
-This step will now install an NPM package which will serve as our generic device application. **DON'T WAIT FOR THE PACKAGE TO COMPLETE. CONTINUE WITH THE EXERCISE** 
-
-## Exersice
-
-### Create a node
-A **Node** is the application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*.
-
-1. Navigate to the [Nodes]( https://www.microservicebus.com/Nodes) page using the menu on the upper left corner.
-2. Click the “Create new node” button, and give it a name, eg “laptop”
-3. Click “Create”
-4. Your node should now be visible in the list. **Enable debug** while you're here.
-
-You have now configured a node on your organization, and it’s time to start it up. The NPM package you installed earlier is a generic client which hasn’t been given credentials to log in to your organization. To initiate the node…
-
-1. click the “**Generate**” button to receive a temporary code.
-2. Open a new terminal window and type: **startnode -c [YOUR CODE] -n [NAME OF NODE]**
+### /server.js
+This is the starting point of the project. Note that the this is where we set the view engine.
 ```js
-eg startnode -c ABC123 -n laptop
+app.set("view engine", "vash");
 ```
-
-The node should startup with no errors:
-
-<img src="http://microservicebus.blob.core.windows.net/sample/hol7_node.jpg" alt="Drawing" style="height: 100px;"/>
-
-Please note that no services are started.
-
-### Create a flow
-A **Flow** is where different devices can interact, sending messages from one device to another. This is done using **Services**. A *Service* is essentially a piece of software (JavaScript in this case) that does something useful, such as reading a sensor, saving a file or transforming a message. 
-
-Begin with navigating to the **Flow page**, and click the **Create new** button. Give it a name, such as HOL7.
-
-After the *Flow* has been created, a flow designer will appear. On the left you’ll see *Services* grouped in **Inbound-**, **Outbound-** and **Other Services**. *Inbound* services are services that starts the flow, such as reading off a sensor. *Outbound* services are generally sending data somewhere else, as to a database. Sometime you need to write some custom script for which you can find the *Script* service among the *Other Services* category.
-
-The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
-
-The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
-
-1. Start out by dragging a **Simulator Temperature Sensor** from the toolbox (*Inbound*) to the designer canvas.
-2. Next drag the following Services to the canvas and arrange the according to the image below. Attach them together by dragging the “handle" of each service to the next: 
-
-* **JavaScript** service (*Other Services*)  
-* **MongoDb** service (*Outbound Services*) 
-* **Send mail** service (*Outbound Services*)  
-
-<img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
-
-1. *Temperature readings are received from the simulated thermometer sensor*
-2. *The temperature readings is transformed to a MongoDb Insert Message*
-3. *The message is inserted into the MongoDb database*
-4. *If the temperature is greater than 30 or less than 10 an email is sent to the administrator*
-
-#### Configure the Services
-A *Service* can run on ANY node, although in our case they’ll all run on the same one. Later, if you have time you can add more nodes and set each service to run on different ones. 
-
-Double-click on each node. In the properties dialog, set the **Name** of the node to the one you created earlier (Eg. "laptop").
-
-##### Configure email service
-The Send Email service require some additional settings. Double-click the *Send Email* service and set properties on each tab.
-
-Property | Tab | Value
-------------- | ------------- | -------------
-From | Static properties | microservicebus.xlent.se 
-To | Static properties | **YOUR EMAIL** 
-Subject | Static properties | ALERT 
-Body | Static properties | The temperature is now [temp]
-SMTP server | Security properties | smtp.sendgrid.net
-Port | Security properties | 587
-User name | Security properties | **Provided by the trainer**
-Password | Security properties | **Provided by the trainer**
-
-*Note the [temp] value in the Body property. This points to the temp field of the message.*
-
-##### JavaScript service
-The *MongoDb* service works for queries, inserts, deletes and updates, but expects a specific message for each operation. We’ll therefor use the *JavaScript* service to transform the message from the *Temperature* service to the “insert” message expected from the *MongoDb* service.
-
-Right-click the **JavaScript** service and select **Script**. In the editor, type **nosql** and hit **CTRL+Space**, and select **nosqlinsert**. Set the *collection* field to "**temperatures**":
+Also, note the reference to the **controllers** object in the beginning of the page, and later the call to the *init* function .
 ```js
-message = {
-  'type': 'INSERT',
-  'collection': 'temperatures',
-  'data': message
-};
+controllers.init(app);
 ```
+The *controllers* object is a special controller where we initilize the other two controlles (*home* and *product*). Open the **controllers** folder and click on the **index.js** file to see the *controllers* object.
 
-#### Set routing condition
-Remember how we were only suppose to send email alert if the temperature exceeds a specified threshold. This is done by setting up a routing condition.
-1. Right-click the *Send email* service and select "**Routing expression**" or just double-click the "**true**" value between the *Temperature sensor* service and the *Send email* service.
-2. Type the following:
+### ./controllers/homeController.js
+As you could see in the *./controllers/index.js* file, it starts up two other controllers and call their *init* function. Open the **homeController**, and examine its content.
+
+Inside the **init** function we see an **app.get()** call that should look familiar to you, part from the fact that we call the **render function** rather than the **send** as we did in lab 4. The *render* function uses the view engine to forward the response to a view along with the data.
 ```js
-var route = message.temp > 30 || message.temp < 10;
+res.render("home/index", {title:""});
 ```
+### ./controllers/productsController.js
+The **productsController** is similar to the *homeController*, part from that it has a different *URI* and returns data. - Which brings us to the *data* object…
 
-Click the **Ok** to save the script.
-
-## Try it out
-Click the **Save** button on the designer, and flip back to the node. Note that the node is getting restarted and is starting up all the services.
-Open a command prompt/terminal and navigate to your MongoDb forlder. 
-
-1. Type **mongo** to get into the mongo shell
-2. Type **use local** to set the database.
-3. Type **db["temperatures"].find()** to query for all items.
+### ./data/index.js
+The **data** object is a function that is handling all data operations. As you can see there is the commonly used array of assorted confectionery.
+The *data* object also has a function returning all products called **getProducts**, which was called from the *productsController*.
+### ./view/layout.vash
+This is our main view. Every other view will be displayed INSIDE this view. This is not an HTML course so we won’t cover the details of the content, But take a note of the **block** call in the middle of the page:
+```js
+<div>@html.block("body")</div>
+``` 
+This call fetching the content from the specified view.
+### ./view/products/index.vash
+There are currently two controllers and two views. The first view is in the *./views/home/index.vash*, but there is nothing really interesting to observe there. Instead we’ll jump strait over to ***./views/products/index.vash**.
+The first statement (*@html.extend*) tells the view engine (*Vash*) to use the **layout**.vash file as the master page. The second correlates to the **block** statement found in the master page. Inside this statement is where we put the View content.
+As described earlier, the caller (the browser) calls the **controller** which forwards its model (the data) to the view. If you examine the content in the view, you’ll see references to "***model***" at several places. **model** is the data passed from the controller.
+In the homeController we have:
+```js
+res.render("home/index", {title:"Home"});
+```
+This means we can go this in the view:
+```html
+<h1>@model.title</h1>
+```
+In the productController we pass the *product* collection to the view, and can therefore iterate over the array:
+```html
+@model.products.forEach(function(product){
+  <div class="row gridRow">
+     <div class="col-xs-4 test1 ">@product.name</div>
+     <div class="col-xs-3 test2 ">@product.price</div>
+  </div>
+})
+```
+## Exercise 
