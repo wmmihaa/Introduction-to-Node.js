@@ -145,13 +145,14 @@ You are almost done ;)
 
 1. In the *views* folder, create a new folder called “**temperatures**”. 
 2. Copy the the **./views/home/index.vash** and paste it into the new *temperatures* folder.
-3. Remove the existing *div* and replace it with:
+3. Remove the existing *<div>* and replace it with:
 ```html
 <div class="container-fluid gridContainer">
       <div id="chart-container"></div>
 </div>
 ```
-*The **chart-container** div is a place holder for our chart.*
+*The "chart-container" div is a place holder for our chart.*
+
 #### Scripts (client side)
 Although it’s nice to use the same language (JavaScript) on both server side and client side, it can sometimes be confusing…
 After the *div* tag you just added, add the **script** section below:
