@@ -42,13 +42,13 @@ collection.insert(req.body, function (err, ret) {
 ####To query for **all** products use this syntax:
 ```js
 collection.find().toArray(function(err, items){
-   // …
+   // respond from here...
 });
 ```
 ####To query for a single instance use this syntax:
 ```js
 collection.findOne( {id:id}, function(err, item) {
-   // …
+   // respond from here...
 });
 ```
 **Note** *{id:id}* is the query you'll use.
