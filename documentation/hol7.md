@@ -79,7 +79,7 @@ var mongoDb = require('mongodb');
 var url = "mongodb://localhost:27017/local"
 var temperatures;
 ```
-Next, begin the function with connecting to the database and set the collection (*temperatures*) (after ```(function (data){… ```):
+Next, begin the function with connecting to the database and set the *temperatures* collection (after ```(function (data){… ```):
 ```js
 mongoDb.MongoClient.connect(url, function(err,db){
         temperatures = db.collection("temperatures");
