@@ -145,7 +145,7 @@ You are almost done ;)
 
 1. In the *views* folder, create a new folder called “**temperatures**”. 
 2. Copy the the **./views/home/index.vash** and paste it into the new *temperatures* folder.
-3. Remove the existing *<div>* and replace it with:
+3. Remove the existing **div** tag (and it's content) and replace it with:
 ```html
 <div class="container-fluid gridContainer">
       <div id="chart-container"></div>
