@@ -124,7 +124,8 @@ In the *controllers* folder, add a new file called **temperaturesController.js**
     };
 })(module.exports); 
 ``` 
-As you can see, this controller is not doing much except passing the title of the page to the view engine. The reason for this is that data that we’re going to work with is going to be used by the client side JavaScript on the page to build up the diagram.
+As you can see, this controller is not doing much except passing the title of the page to the view engine. The reason for this is that the chart is built up by **client side** JavaScript after view engine has rendered the page.
+
 The way to get around this, is to provide yet another function in the controller which can be called from the view after the page has loaded. Add the section below after the existing handler:
 ```js
         app.get("/temperatures/getAggregates", function(req,res){
