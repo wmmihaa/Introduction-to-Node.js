@@ -6,12 +6,12 @@
 * In Visual Studio Code click *File* -> *Open Folder...*, browse to the **Introduction-to-Node.js\hol6 folder** and click *Select*.
 * Open a command prompt/terminal and type **npm express, mongodb vash --save**
 
-## Exercise 
+## Familiarize yourself with the project
 For this exercise we begin with an existing site that has been created for you. In VS Code, start by hitting **F5** and browse to [http://localhost:3000]( http://localhost:3000) to make sure the site is working.
 
 For this exercise we begin with an existing site that has been created for you. In VS Code, start by hitting **F5** and browse to [http://localhost:3000]( http://localhost:3000) to make sure the site is working.
-### Familiarize yourself with the project
-#### /server.js
+
+### /server.js
 This is the starting point of the project. Note that the this is where we set the view engine.
 ```js
 app.set("view engine", "vash");
@@ -22,26 +22,26 @@ controllers.init(app);
 ```
 The *controllers* object is a special controller where we initilize the other two controlles (*home* and *product*). Open the **controllers** folder and click on the **index.js** file to see the *controllers* object.
 
-#### ./controllers/homeController.js
+### ./controllers/homeController.js
 As you could see in the *./controllers/index.js* file, it starts up two other controllers and call their *init* function. Open the **homeController**, and examine its content.
 
 Inside the **init** function we see an **app.get()** call that should look familiar to you, part from the fact that we call the **render function** rather than the **send** as we did in lab 4. The *render* function uses the view engine to forward the response to a view along with the data.
 ```js
 res.render("home/index", {title:""});
 ```
-#### ./controllers/productsController.js
+### ./controllers/productsController.js
 The **productsController** is similar to the *homeController*, part from that it has a different *URI* and returns data. - Which brings us to the *data* object…
 
-#### ./data/index.js
+### ./data/index.js
 The **data** object is a function that is handling all data operations. As you can see there is the commonly used array of assorted confectionery.
 The *data* object also has a function returning all products called **getProducts**, which was called from the *productsController*.
-#### ./view/layout.vash
+### ./view/layout.vash
 This is our main view. Every other view will be displayed INSIDE this view. This is not an HTML course so we won’t cover the details of the content, But take a note of the **block** call in the middle of the page:
 ```js
 <div>@html.block("body")</div>
 ``` 
 This call fetching the content from the specified view.
-#### ./view/products/index.vash
+### ./view/products/index.vash
 There are currently two controllers and two views. The first view is in the *./views/home/index.vash*, but there is nothing really interesting to observe there. Instead we’ll jump strait over to ***./views/products/index.vash**.
 The first statement (*@html.extend*) tells the view engine (*Vash*) to use the **layout**.vash file as the master page. The second correlates to the **block** statement found in the master page. Inside this statement is where we put the View content.
 As described earlier, the caller (the browser) calls the **controller** which forwards its model (the data) to the view. If you examine the content in the view, you’ll see references to "***model***" at several places. **model** is the data passed from the controller.
@@ -62,3 +62,4 @@ In the productController we pass the *product* collection to the view, and can t
   </div>
 })
 ```
+## Exercise 
