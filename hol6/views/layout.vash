@@ -3,33 +3,13 @@
 <title>@model.title</title>
 <head>
     <link href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='./styles/site.css' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-    <style>
-        header{
-            background:#eee;
-        }
-        header .title{
-            
-            font-size: 28px;
-        }
-        .menuItem{
-            margin-top:5px;
-            font-size: 18px;
-        }
-        .gridContainer{
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        .rowHeader{
-            font-size: 18px;
-            background:#eee;
-            font-weight: bold;
-        }
-        .gridRow{
-            font-size: 16px;
-        }
-    </style>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
     <header>
         <div class="container">
             <div class="row">
@@ -43,11 +23,5 @@
     <div class="container">
         <div>@html.block("body")</div>
     </div>
-    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--
-    <script src="http://static.fusioncharts.com/code/latest/fusioncharts.charts.js"></script>
-    <script src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-    -->
 </body>
 </html>
