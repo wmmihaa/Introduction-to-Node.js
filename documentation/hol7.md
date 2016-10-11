@@ -81,7 +81,7 @@ mongoDb.MongoClient.connect(url, function(err,db){
         temperatures = db.collection("temperatures");
     });
 ```
-Last step is to add the **getAggregates** function that the controller is going to call. Add the section below after the *getProducts* function:
+Last step is to add the **getAggregates** function that the controller is going to call. Add the section below after the **data.getProducts** function:
 ```js
 data.getAggregates = function(callback){
         temperatures.aggregate(
