@@ -34,3 +34,5 @@ The tutorial includes one lab on IoT (Internet Of Things), where you’ll be usi
 4. Log in to the microServiceBus.com site using the credentials you supplied in step 2. 
 5. Select option 2 and provide a name and description of your organization. 
 6. Uncheck the “*Add sample scenarios*” checkbox and click *Create organization*
+
+# Looking forward to see you at the course!
