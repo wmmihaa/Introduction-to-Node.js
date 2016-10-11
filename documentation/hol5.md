@@ -35,7 +35,7 @@ We are now ready to update the **GET** and **POST** operations to use the newly 
 ####To insert a product to a collection, use this syntax:
 ```js
 collection.insert(req.body, function (err, ret) {  
- // …
+ // respond from here...
 });
 ```
 
