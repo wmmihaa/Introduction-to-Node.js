@@ -62,6 +62,7 @@ In the productController we pass the *product* collection to the view, and can t
 ```
 ## Exercise 
 In this lab you are going to add a view to display a diagram over the temperatures you’ve been capturing in lab6. To do this we need to take the following actions:
+
 1. Update the data object with a method to return a temperature aggregare
 2. Create a new controller called **temperaturesController**
 4. Update the ./controllers/index.js to include the new controller
