@@ -1,0 +1,23 @@
+header{
+    background:#eee;
+}
+header .title{
+    
+    font-size: 28px;
+}
+.menuItem{
+    margin-top:5px;
+    font-size: 18px;
+}
+.gridContainer{
+    padding: 50px;
+    
+}
+.rowHeader{
+    font-size: 18px;
+    background:#eee;
+    font-weight: bold;
+}
+.gridRow{
+    font-size: 16px;
+}
