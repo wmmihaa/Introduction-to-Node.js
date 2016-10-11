@@ -167,7 +167,7 @@ After the *div* tag you just added, add the **script** section below:
 ```
 This function is going to be executed after the page has been renderd, and is the place where you'll add the logic to call the API.
 
-The chart library we’re going to use is called *FusionChart*. And as with any other charts we need to configure it with things like *title*, *colors*, *axixs names* etc, etc… All this is done in a *datasource* we call “**ds**”:
+The chart library we’re going to use is called *FusionChart*. And as with any other charts we need to configure it with things like *title*, *colors*, *axixs names* etc, etc… All this is done in a *data source* we call “**ds**”:
 ```js
 var ds = {"chart": {
             "caption": "Temperatures/hour",
@@ -184,7 +184,7 @@ var ds = {"chart": {
         "data": []
     };
 ```
-Copy the declaration above onto the **init** function.
+Copy the declaration above into the **init** function.
 The last step is to call our controller. This is done using the JQuery **get** function:
 ```js
 $.get('./temperatures/aggregates', function(data){
