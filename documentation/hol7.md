@@ -43,7 +43,8 @@ This is our main view. Every other view will be displayed INSIDE this view. This
 ``` 
 This call fetching the content from the specified view.
 #### ./view/products/index.vash
-There are currently two controllers and two views. The first view is in the *./views/home/index.vash*, but there is nothing really interesting to observe there. Instead we’ll jump strait over to ***./views/products/index.vash**.
+There are currently two controllers and two views. The first view is in the *./views/home/index.vash*, but there is nothing really interesting to observe there. Instead we’ll jump strait over to **./views/products/index.vash**.
+
 The first statement (*@html.extend*) tells the view engine (*Vash*) to use the **layout**.vash file as the master page. The second correlates to the **block** statement found in the master page. Inside this statement is where we put the View content.
 As described earlier, the caller (the browser) calls the **controller** which forwards its model (the data) to the view. If you examine the content in the view, you’ll see references to "***model***" at several places. **model** is the data passed from the controller.
 In the homeController we have:
