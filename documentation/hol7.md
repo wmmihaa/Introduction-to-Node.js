@@ -64,9 +64,10 @@ In the productController we pass the *product* collection to the view, and can t
 In this lab you are going to add a view to display a diagram over the temperatures you’ve been capturing in lab6. To do this we need to take the following actions:
 1. Update the data object with a method to return a temperature aggregare
 2. Create a new controller called **temperaturesController**
-3. Update the ./controllers/index.js to include the new controller
-4. Create a new view called **temperatures**
-5. Update the master view with references to *fusioncharts* which is the library we’ll use to display the diagram.
+3. Create an API controller called **apiController**
+4. Update the ./controllers/index.js to include the new controller
+5. Create a new view called **temperatures**
+6. Update the master view with references to *fusioncharts* which is the library we’ll use to display the diagram.
 
 ### Update data object
 This time we’re going to use MongoDb, so we need to add references to the package. Open the **./data/index.js** file, and add the following at the very top of the document:
@@ -108,6 +109,7 @@ Step one complete, let’s build the controller.
 
 ### Create Controller
 In the *controllers* folder, add a new file called **temperaturesController.js**
+### Create an API controller
 ### Update controllers
 ### Create View
 ### Update master view
