@@ -16,7 +16,7 @@ This is the starting point of the project. Note that the this is where we set th
 ```js
 app.set("view engine", "vash");
 ```
-Also, note the reverence to the **controllers** object in the beginning of the page, and later the call to the *init* function .
+Also, note the reference to the **controllers** object in the beginning of the page, and later the call to the *init* function .
 ```js
 controllers.init(app);
 ```
