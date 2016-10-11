@@ -20,7 +20,8 @@ Also, note the reference to the **controllers** object in the beginning of the p
 ```js
 controllers.init(app);
 ```
-The *controllers* object is a special controller where we’d manage all the other controller. Open the **controllers** folder and click on the **index.js** file to see the *controllers* object.
+The *controllers* object is a special controller where we initilize the other two controlles (*home* and *product*). Open the **controllers** folder and click on the **index.js** file to see the *controllers* object.
+
 #### ./controllers/homeController.js
 As you could see in the index.js file, it starts up two other controllers and call their *init* function. Open the **homeController**, and examine its content.
 Inside the **init** function is an **app.get()** call that should look familiar to you, part from the fact that we call the **render function** rather than the **send** as we did in lab 4. The *render* function uses the view engine to forward the response to a view with the data.
