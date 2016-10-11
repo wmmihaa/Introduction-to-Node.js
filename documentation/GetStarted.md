@@ -17,7 +17,7 @@ In some of the labs, we’re going to build Web API’s, and **Postman** is an e
 
 ###MongoDB <img src="https://microservicebus.blob.core.windows.net/sample/mongo.png" alt="Postman"/>
 
-MongoDB is one of the most commonly used databases for Node.js and in some of the labs we're going to use it. Download the community edition from [here](https://www.mongodb.com/download-center?jmp=docs&_ga=1.150965301.2000935923.1474745557#community]). Install it with complete opiton if asked.
+MongoDB is one of the most commonly used databases for Node.js and in some of the labs we're going to use it. Download the community edition from [here](https://www.mongodb.com/download-center?jmp=docs&_ga=1.150965301.2000935923.1474745557#community]). Install it with complete options if asked.
 
 ###Git <img src="https://microservicebus.blob.core.windows.net/sample/git.png" alt="Git"/>
 Git is a version control system that is used for software development and other version control tasks. Git is not strictly necessary, but every developer with pride should have it installed. 
