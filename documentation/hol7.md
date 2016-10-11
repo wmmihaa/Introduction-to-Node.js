@@ -103,6 +103,7 @@ data.getAggregates = function(callback){
     };
 ```
 **If this code is a bit overwhelming, don’t worry – this is not a MongoDB course.** In short it’s an aggregation query which will give you the average temperature for every minute.
+
 Step one complete, let’s build the controller.
 
 ### Create Controller
