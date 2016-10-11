@@ -1,10 +1,12 @@
 # Introduction to Node.js
 # HOL7 – Building an MVC web site using Node.js
 ## Description
+In this lab you are going to work with an MVC web site using **express**, **mongodb** and **vash**. You will learn about *controller*, *views* and *API’s* and how to structure an MVC application using Node.js.
+When you’re done, you’ll be displaying a graph showing the average temperatures per minute. If you have stopped your IoT node, start it up again so that you’ll have some data to display at the end of the lab.
 
 ## Setup
 * In Visual Studio Code click *File* -> *Open Folder...*, browse to the **Introduction-to-Node.js\hol7 folder** and click *Select*.
-* Open a command prompt/terminal and type **npm express, mongodb vash --save**
+* Open a command prompt/terminal and type **npm express mongodb vash --save**
 
 ## Familiarize yourself with the project
 For this exercise we begin with an existing site that has been created for you. In VS Code, start by hitting **F5** and browse to [http://localhost:3000]( http://localhost:3000) to make sure the site is working.
