@@ -19,6 +19,11 @@ In some of the labs, we’re going to build Web API’s, and **Postman** is an e
 
 MongoDB is one of the most commonly used databases for Node.js and in some of the labs we're going to use it. Download the community edition from [here](https://www.mongodb.com/download-center?jmp=docs&_ga=1.150965301.2000935923.1474745557#community]). Install it with complete opiton if asked.
 
+###Git <img src="https://microservicebus.blob.core.windows.net/sample/git.png" alt="Git"/>
+Git is a version control system that is used for software development and other version control tasks. Git is not strictly necessary, but every developer with pride should have it installed. 
+
+The Git client for Windows can be installed [here]( https://git-scm.com/download/win). If you are a Mac user you can download it [here]( https://git-scm.com/download/mac)
+
 ###microServicebus.com <img src="https://microservicebus.blob.core.windows.net/sample/msb.png" alt="microServiceBus"/>
 
 The tutorial includes one lab on IoT (Internet Of Things), where you’ll be using [microServiceBus.com]( https://microServiceBus.com). To speed things up, prepare yourself by creating and account and organization if you don’t already have one.
