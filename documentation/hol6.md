@@ -9,8 +9,6 @@
 ## Familiarize yourself with the project
 For this exercise we begin with an existing site that has been created for you. In VS Code, start by hitting **F5** and browse to [http://localhost:3000]( http://localhost:3000) to make sure the site is working.
 
-For this exercise we begin with an existing site that has been created for you. In VS Code, start by hitting **F5** and browse to [http://localhost:3000]( http://localhost:3000) to make sure the site is working.
-
 ### /server.js
 This is the starting point of the project. Note that the this is where we set the view engine.
 ```js
