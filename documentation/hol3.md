@@ -6,6 +6,7 @@ In this lab you are going to build a Web API providing a RESTful interface to a 
 * Create a folder called **HOL3**
 * Create a new file called **hol3.js**
 * Open a command prompt from VS Code by hitting **CTRL+Shift+C**
+* Type **npm init** and hit Enter on all questions, or fill out the questions if it makes you happy...
 * Import package dependancies by typing **npm install express body-parser --save**
 
 ## Before you begin
