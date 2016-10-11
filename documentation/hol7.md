@@ -129,4 +129,4 @@ The way to get around this, is to provide yet another function in the controller
             });
         });
 ```
-This handler calls the **getAggregates** function of the data helper object, and different from the first hander, it does not render the response through the view engine. This is because this is a Web API, very similar to the one you created in lab 5.
+This handler calls the **getAggregates** function of the data helper object that you created earlier. And different from the first hander, it does not render the response through the view engine. This is because this is a Web API, very similar to the one you created in lab 5.
