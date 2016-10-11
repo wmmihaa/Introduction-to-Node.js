@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<title>@model.title</title>
+<head>
+    <link href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <style>
+        header{
+            background:#eee;
+        }
+        header .title{
+            
+            font-size: 28px;
+        }
+        .menuItem{
+            margin-top:5px;
+            font-size: 18px;
+        }
+        .gridContainer{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .rowHeader{
+            font-size: 18px;
+            background:#eee;
+            font-weight: bold;
+        }
+        .gridRow{
+            font-size: 16px;
+        }
+    </style>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 title ">Hands On Lab #6</div>
+                <div class="col-xs-1 menuItem "><a href="./">Home</a></div>
+                <div class="col-xs-1 menuItem "><a href="./products">Products</a></div>
+                <div class="col-xs-2 menuItem "><a href="/temperatures">Temperatures</a></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div>@html.block("body")</div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--
+    <script src="http://static.fusioncharts.com/code/latest/fusioncharts.charts.js"></script>
+    <script src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    -->
+</body>
+</html>

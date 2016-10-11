@@ -1,0 +1,20 @@
+@html.extend('layout', function(model){
+    @html.block("body", function(model){
+
+        @if(model.error){
+            <p class="text-error">Error occurd: @model.error</p>
+        }
+
+        <h1>@model.title</h1>
+
+        <div class="container theme-showcase" role="main">
+            <div class="jumbotron">
+                <h1>Welcome to HOL6!</h1>
+                <h2>Building web site using Node.js</h2>
+                <p>In this lab we are going to learn about build an MVC application using Express, MongoDb and Vash. When you’ve completed this lab you’ll be displaying a diagram the temperatures you collected in the IoT lab.</p>
+                <p><a href="https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/documentation/hol6.md" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
+            </div>            
+        </div>
+      
+    });
+})

@@ -1,0 +1,23 @@
+@html.extend('layout', function(model){
+    @html.block("body", function(model){
+
+        @if(model.error){
+            <p class="text-error">Error occurd: @model.error</p>
+        }
+
+        <h1>@model.title</h1>
+
+        <div class="container-fluid gridContainer" >
+            <div class="row rowHeader">
+                <div class="col-xs-4 test1 ">Product</div>
+                <div class="col-xs-3 test2 ">Price</div>
+            </div>
+        @model.products.forEach(function(product){
+            <div class="row gridRow">
+                <div class="col-xs-4 test1 ">@product.name</div>
+                <div class="col-xs-3 test2 ">@product.price</div>
+            </div>
+        })
+        </div>     
+    });
+})
