@@ -165,6 +165,8 @@ After the *div* tag you just added, add the **script** section below:
 
    </script>
 ```
+This function is going to be executed after the page has been renderd, and is the place where you'll add the logic to call the API.
+
 The chart library we’re going to use is called *FusionChart*. And as with any other charts we need to configure it with things like *title*, *colors*, *axixs names* etc, etc… All this is done in a *datasource* we call “**ds**”:
 ```js
 var ds = {"chart": {
