@@ -142,6 +142,7 @@ Open the file and add the controller and call the *init* function just like the 
 
 ### Create View
 You are almost done ;)
+
 1. In the *views* folder, create a new folder called “**temperatures**”. 
 2. Copy the the **./views/home/index.vash** and paste it into the new *temperatures* folder.
 3. Remove the existing *div* and replace it with:
