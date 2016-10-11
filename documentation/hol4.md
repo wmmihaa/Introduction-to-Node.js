@@ -51,7 +51,6 @@ var expect = require('chai').expect;
 var request = require('request');
 require('../hol3.js');
 ```
-Copy the above into the *unittest.js* file.
 
 ### Create your first test
 Copy the test description below into your unit test:
