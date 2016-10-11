@@ -128,8 +128,8 @@ As you can see, this controller is not doing much except passing the title of th
 
 The way to get around this, is to provide yet another function in the controller which can be called from the view after the page has loaded. Add the section below after the existing handler:
 ```js
-        app.get("/temperatures/getAggregates", function(req,res){
-            data.aggregates(function(err, readings){
+        app.get("/temperatures/aggregates", function(req,res){
+            data.getAggregates(function(err, readings){
                 res.send({errors: err, readings: readings});
             });
         });
