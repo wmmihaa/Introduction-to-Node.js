@@ -45,6 +45,7 @@ In this lab you are going to use three references:
 * **chai**&nbsp;&nbsp;Used for validating the result
 * **hol3.js**&nbsp;&nbsp;The REST service you created in the previous lab 
 
+Paste the *require* statements below into the *unittest.js* file you created earlier: 
 ```js
 var expect = require('chai').expect;
 var request = require('request');
