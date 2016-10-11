@@ -64,7 +64,6 @@ In the productController we pass the *product* collection to the view, and can t
 In this lab you are going to add a view to display a diagram over the temperatures you’ve been capturing in lab6. To do this we need to take the following actions:
 1. Update the data object with a method to return a temperature aggregare
 2. Create a new controller called **temperaturesController**
-3. Create an API controller called **apiController**
 4. Update the ./controllers/index.js to include the new controller
 5. Create a new view called **temperatures**
 6. Update the master view with references to *fusioncharts* which is the library we’ll use to display the diagram.
@@ -108,10 +107,26 @@ data.getAggregates = function(callback){
 Step one complete, let’s build the controller.
 
 ### Create Controller
-In the *controllers* folder, add a new file called **temperaturesController.js**
-### Create an API controller
-### Update controllers
-### Create View
-### Update master view
+In the *controllers* folder, add a new file called **temperaturesController.js** and copy the content below:
+```js
+(function (temperaturesController){
+    var data = require("../data");
+    temperaturesController.init = function (app){        
+        
+        app.get("/temperatures", function(req,res){
+            res.render("temperatures/index", {title:"Temperatures"});
+        });
 
-
+    };
+})(module.exports); 
+``` 
+As you can see, this controller is not doing much except passing the title of the page to the view engine. The reason for this is that data that we’re going to work with is going to be used by the script of the page to build up a diagram.
+The way to get around this, is to provide yet another function in the controller which can be called from the view after the page has loaded. Add the section below after the existing handler:
+```js
+        app.get("/temperatures/getAggregates", function(req,res){
+            data.aggregates(function(err, readings){
+                res.send({errors: err, readings: readings});
+            });
+        });
+```
+This handler calls the **getAggregates** function of the data helper object, and different from the first hander, it does not render the response through the view engine. This is because this is a Web API, very similar to the one you created in lab 5.
