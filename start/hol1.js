@@ -11,17 +11,17 @@ var products = [
 
 var accountBalance = 10;
 
-function withdraw(amount, err){
+function withdraw(amount, callback){
     // If [amount] is more than [accountBalance] use the 
-    //   callback function to pass the error message. Eg err("Insufficient funds.");
+    //   callback function to pass the error message. Eg callback("Insufficient funds.");
     
     // Otherwise withdraw [amount] from [accountBalance] and call the 
-    //    err function with no parameters
+    //    callback function with no parameters
 }
 function calculateVAT(amount){
     // Use the [VAT] constat to calculate the tax from [amount] and return tax.
 }
-function buy(product, err){
+function buy(product, callback){
     // Call the withdraw function passing in the price of [product]
     //   along with an anonymous function Eg function(err){...}
 
