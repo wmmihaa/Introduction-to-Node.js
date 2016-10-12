@@ -7,7 +7,7 @@ MongoDB is one of the most commonly used databases for Node.js, and during this 
 * Create a folder called *MongoDBLab*
 * Open the MongoDB installation folder and browse the bin folder (*C:\Program Files\MongoDB\Server\3.2\bin on Windows*)
 * Copy all files to the folder you created in step 1
-* In the *MongoDBLab* folder, create a new directory called data.
+* In the *MongoDBLab* folder, create a new directory called **data**.
 * Open a console/terminal and browse to the *MongoDBLab* folder
 * Type **mongod -dbpath ./data --httpinterface –rest** and hit ENTER
 
