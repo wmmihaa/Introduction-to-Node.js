@@ -21,4 +21,4 @@ The course material is free for individual use as defined in the [license](Licen
 
 For trainer led sessions in Sweden, please contact [**AddSkills/Cornerstone**](http://www.cornerstone.se/). For other regions please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/)
 
-If you intend to use the material for training sessions, please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/).
+If you intend to use the material, along with slidedecks, speaker notes and demos, for training sessions, please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/).
