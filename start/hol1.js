@@ -25,7 +25,7 @@ function buy(product, callback){
     // Call the withdraw function passing in the price of [product]
     //   along with an anonymous function Eg function(err){...}
 
-    // Inside the anonymous function check if err is "falsy". If err is not "falsy"
+    // Inside the anonymous function check if err is "truesy". If err is "truesy" (error exists)
     //   pass the error back to the caller using the callback function. Eg callback(err)
     
     // If the err is "falsy" (no error), continue by calling the calculateVAT function to
