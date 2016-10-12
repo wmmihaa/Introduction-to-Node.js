@@ -15,6 +15,10 @@ The course includes 10 hands-on-labs covering the following modules:
 ### Module 9: Build Web applications using Node.js
 ### Module 10: Hosting Node.js in the cloud
 
+All HOL material is found in the [documentation](documentation) folder.
+
 The course material is free for individual use as defined in the [license](License). 
 
-For trainer led sessions in Sweden, please contact [AddSkills/Cornerstone](http://www.cornerstone.se/). For other regions, or if you care to do training, please contact [XLENT Integration & Services] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/)
+For trainer led sessions in Sweden, please contact [**AddSkills/Cornerstone**](http://www.cornerstone.se/). For other regions please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/)
+
+If you intend to use the material for training sessions, please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/).
