@@ -1,4 +1,4 @@
-# Introduction to Node.js
+<row><img src="https://microservicebus.blob.core.windows.net/sample/nodejs-256.png" alt="Node.js"/><span>Introduction to Node.js</span></row>
 
 This training course will help you discover how the Node framework can help you write server-side code and build lightweight, scalable network applications.
 
