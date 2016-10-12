@@ -15,6 +15,6 @@ The course includes 10 hands-on-labs covering the following modules:
 ### Module 9: Build Web applications using Node.js
 ### Module 10: Hosting Node.js in the cloud
 
-The course material is free for individual use as defined in the [license](). 
+The course material is free for individual use as defined in the [license](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/License). 
 
-For trainer led sessions in Sweden, please contact [AddSkills/Cornerstone](). For other regions, or if you care to do training, please contact [XLENT Integration & Services] ()
+For trainer led sessions in Sweden, please contact [AddSkills/Cornerstone](http://www.cornerstone.se/). For other regions, or if you care to do training, please contact [XLENT Integration & Services] ()
