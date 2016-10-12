@@ -26,7 +26,7 @@ You are now going to make four tests:
 
 ## Setup
 * Open a command prompt from VS Code by hitting CTRL+Shift+C
-* Import package dependencies by typing **npm install mocha,chai --save-dev**
+* Import package dependencies by typing **npm install mocha chai --save-dev**
 * Open the **package.json** file in VS Code and add a **test** to the **script** section:
 ```js
   "scripts": {
@@ -45,12 +45,12 @@ In this lab you are going to use three references:
 * **chai**&nbsp;&nbsp;Used for validating the result
 * **hol3.js**&nbsp;&nbsp;The REST service you created in the previous lab 
 
+Paste the *require* statements below into the *unittest.js* file you created earlier: 
 ```js
 var expect = require('chai').expect;
 var request = require('request');
 require('../hol3.js');
 ```
-Copy the above into the *unittest.js* file.
 
 ### Create your first test
 Copy the test description below into your unit test:
@@ -79,8 +79,10 @@ describe("Get all products", function () {
     });
 });
 ```
+This test only evaluates one condition (*should execute without errors*);
+
 ## Try it out.
-Open a console/terminal and type **npm test**
+Open a console/terminal and type **npm test**. Proceed to the next condition if it was executed successfully.
 
 ### Add the additional conditions
 One down, two to go...
@@ -91,5 +93,5 @@ One down, two to go...
 
 ### Create the other tests
 * Copy the whole describe section for each test. 
-* Update the options object with uri and json (payload).
-* Update the request operation to **post()** and **delete()** (if you’ve implemented it) 
+* Update the options object with **uri** and **json** (the json field is only used or the payload of POST operations).
+* Update the request operation to **post()** (and **delete()** if you’ve implemented it) 

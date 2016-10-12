@@ -3,9 +3,11 @@
 ## Description
 In this lab you are going to build a Web API providing a RESTful interface to a static *products* collection. To do this you’re going to use an NPM package called **express** which is one of the most commonly used web frameworks. We are going to cover more about **express** in the next module, but in this module we’re going to cover the basics.
 ## Setup
-* Create a new file called hol3.js
+* Create a folder called **HOL3**
+* Create a new file called **hol3.js**
 * Open a command prompt from VS Code by hitting **CTRL+Shift+C**
-* Import package dependancies by typing **npm install express,body-parser --save**
+* Type **npm init** and hit Enter on all questions, or fill out the questions if it makes you happy...
+* Import package dependancies by typing **npm install express body-parser --save**
 
 ## Before you begin
 As explained earlier, **express** is a web server framework provided through NPM. You will use **express** to create a web application that will listen for incoming requests. This can easily be done by:

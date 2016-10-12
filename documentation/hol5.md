@@ -28,27 +28,27 @@ mongoDb.MongoClient.connect(url, function(err,db){
      products = db.collection("products");
 });
 ```
-This statement creates a database called **hol5Db** (if it doesn't exist). After successfully connected, it will create a collection called "**Products**".
+This statement creates a database called **hol5Db** (if it doesn't exist). After successfully connected, it will create a collection called "**products**".
 
 ### Update all operations
 We are now ready to update the **GET** and **POST** operations to use the newly created collection. Remember that you should still respond the same way you did before…
 ####To insert a product to a collection, use this syntax:
 ```js
 collection.insert(req.body, function (err, ret) {  
- // …
+ // respond from here...
 });
 ```
 
 ####To query for **all** products use this syntax:
 ```js
 collection.find().toArray(function(err, items){
-   // …
+   // respond from here...
 });
 ```
 ####To query for a single instance use this syntax:
 ```js
 collection.findOne( {id:id}, function(err, item) {
-   // …
+   // respond from here...
 });
 ```
 **Note** *{id:id}* is the query you'll use.
