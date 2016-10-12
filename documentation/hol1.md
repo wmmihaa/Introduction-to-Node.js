@@ -8,7 +8,7 @@ In this lab you will create a function to buy a product and withdraw the price f
 * Open a command prompt and navigate to the folder
 * Type ”npm init” and answer all questions by hitting **Enter**
 * Type ”code [your folder] hol1.js”, eg **code "c:\temp\Introduction to Node.js" hol1.js**
-* Navigate to [hol1.js](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/hol1.js) and copy the content to your hol1.js file
+* Navigate to [hol1.js](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/start/hol1.js) and copy the content to your hol1.js file
 
 ## Exercise
 For this lab, you are going to implement three functions and it's recommended to go about this by implementing the functions from the top down, starting with the **withDraw** function, then the **calculateVAT** function and finish up with the **buy** function. __Each function has comments about what is expected to be done.__ Brackets "[]" are used in the comments to refer to fields and paramaters.
