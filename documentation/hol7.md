@@ -108,6 +108,8 @@ data.getAggregates = function(callback){
 ```
 **If this code is a bit overwhelming, don’t worry – this is not a MongoDB course.** In short it’s an aggregation query which will give you the average temperature for every minute.
 
+[here](http://jonsadka.com/blog/how-to-generate-time-series-week-over-week-year-over-year-etc-aggregations-in-mongodb-using-unix-epoch-timestamps-tutorial-and-example/) is a good post if you want to know more about aggregates and MongoDB.
+
 Step one complete, let’s build the controller.
 
 ### Create Controller
