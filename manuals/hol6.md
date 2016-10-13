@@ -8,8 +8,8 @@ Node.js is great for IoT since it can run on almost every platform, from small d
 Since we don’t have and sensors (nor devices for that matter) for this tutorial, we’re going to rely on simulated sensors.
 
 ##Setup
-### Create account and organization
-For this lab we’re going to use microServiceBus.com as our hub. So before we begin we need to create an account and an organization:
+### Set up the hub
+For this lab we’re going to use microServiceBus.com as our hub. If you haven't already set up your account and organization, follw the instructions below.
 
 1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
