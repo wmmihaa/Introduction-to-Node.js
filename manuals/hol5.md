@@ -58,7 +58,7 @@ products.insert(req.body, function (err, ret) {
 
  
 ## Try it out
-Use Postman as you did in Hol3. YOu can start by inserting the whole collection:
+Use Postman as you did in Hol3. You can start by inserting the whole collection:
 ```js
 [
     {"id":1, "name":"Fazer Kexchoklad", "price":12.4},
