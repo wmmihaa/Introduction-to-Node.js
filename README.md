@@ -15,7 +15,7 @@ The course includes 10 hands-on-labs covering the following modules:
 ### Module 9: Build Web applications using Node.js
 ### Module 10: Hosting Node.js in the cloud
 
-All HOL material is found in the [documentation](documentation) folder.
+All HOL material is found in the [manuals](manuals) folder.
 
 The course material is free for individual use as defined in the [license](License). Please note that the license does not cover trainer led sessions.
 
