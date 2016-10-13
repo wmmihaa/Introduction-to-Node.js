@@ -28,6 +28,8 @@ Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**
 
 In the next module, we’re going to look into all this in more depth, but for now this is all we need to get started.
 
+When you're done, hot **CTRL+C** to stop it.
+
 ## Exercise
 Before we beging, we need some data. For now, we'll just use a static collection of products:
 ```js
