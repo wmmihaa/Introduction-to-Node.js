@@ -45,6 +45,9 @@ products.findOne( {id:id}, function(err, product) {
    // respond from here...
 });
 ```
+**Note** *{id:id}* is the query you'll use.
+
+**Hint:** The incoming query parameter is a string, which you’ll need to convert using the *Number()* function. 
 
 ####To insert a product to a collection, use this syntax:
 ```js
@@ -53,10 +56,6 @@ products.insert(req.body, function (err, ret) {
 });
 ```
 
-
-**Note** *{id:id}* is the query you'll use.
-
-**Hint:** The incoming query parameter is a string, which you’ll need to convert using the *Number()* function. 
  
 ## Try it out
 Use Postman as you did in Hol3.
