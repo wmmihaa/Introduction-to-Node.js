@@ -35,20 +35,20 @@ We are now ready to update the **GET** and **POST** operations to use the newly 
 
 ####To query for **all** products use this syntax:
 ```js
-collection.find().toArray(function(err, items){
+products.find().toArray(function(err, items){
    // respond from here...
 });
 ```
 ####To query for a single instance use this syntax:
 ```js
-collection.findOne( {id:id}, function(err, item) {
+products.findOne( {id:id}, function(err, item) {
    // respond from here...
 });
 ```
 
 ####To insert a product to a collection, use this syntax:
 ```js
-collection.insert(req.body, function (err, ret) {  
+products.insert(req.body, function (err, ret) {  
  // respond from here...
 });
 ```
