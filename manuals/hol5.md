@@ -35,13 +35,13 @@ We are now ready to update the **GET** and **POST** operations to use the newly 
 
 ####To query for **all** products use this syntax:
 ```js
-products.find().toArray(function(err, items){
+products.find().toArray(function(err, products){
    // respond from here...
 });
 ```
 ####To query for a single instance use this syntax:
 ```js
-products.findOne( {id:id}, function(err, item) {
+products.findOne( {id:id}, function(err, product) {
    // respond from here...
 });
 ```
