@@ -32,12 +32,6 @@ This statement creates a database called **hol5Db** (if it doesn't exist). After
 
 ### Update all operations
 We are now ready to update the **GET** and **POST** operations to use the newly created collection. Remember that you should still respond the same way you did before…
-####To insert a product to a collection, use this syntax:
-```js
-collection.insert(req.body, function (err, ret) {  
- // respond from here...
-});
-```
 
 ####To query for **all** products use this syntax:
 ```js
@@ -51,6 +45,15 @@ collection.findOne( {id:id}, function(err, item) {
    // respond from here...
 });
 ```
+
+####To insert a product to a collection, use this syntax:
+```js
+collection.insert(req.body, function (err, ret) {  
+ // respond from here...
+});
+```
+
+
 **Note** *{id:id}* is the query you'll use.
 
 **Hint:** The incoming query parameter is a string, which you’ll need to convert using the *Number()* function. 
