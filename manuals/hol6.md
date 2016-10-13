@@ -9,7 +9,7 @@ Since we don’t have and sensors (nor devices for that matter) for this tutoria
 
 ##Setup
 ### Set up the hub
-For this lab we’re going to use microServiceBus.com as our hub. If you haven't already set up your account and organization, follw the instructions below.
+For this lab we’re going to use microServiceBus.com as our hub. If you haven't already set up your account and organization, follow the instructions below.
 
 1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
