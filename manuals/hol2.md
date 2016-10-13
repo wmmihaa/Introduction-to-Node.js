@@ -13,7 +13,13 @@ In this lab you are going to learn how to work with Node Package Manager (**NPM*
 * Also in VS Code, open the *package.json* file and note that the *dependencies* section has been updated with the installed package
 
 ## Exercise
-In the *hol2.js* file, go through all outputs (*console.log*) and set an appropriate color. 
+In the *hol2.js* file, add the require statement at the top:
+```js
+'use strict'
+require("colors");
+```
+
+Next, go through all outputs (*console.log*) and set an appropriate color. 
 
 ###Tip
 To avoid having to set the color on each segment of outputted text (*Eg “Hello “ + name + “!”*), assemble the whole string into one variable and set the color on the variable. Eg:
