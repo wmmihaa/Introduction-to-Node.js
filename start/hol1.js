@@ -1,6 +1,3 @@
-
-
-
 'use strict'
 const VAT = 0.2;
 var products = [
@@ -29,12 +26,12 @@ function buy(product, callback){
     //   pass the error back to the caller using the callback function. Eg callback(err)
     
     // If the err is "falsy" (no error), continue by calling the calculateVAT function to
-    //   receive the tax.
+    //   receive the tax. 
     // Build up the respose messages using console.log()
     // Expected output:
     // You bought a Snickers for 8.20 SEK
     // VAT: 1.64 SEK
-
+    // Don't forget to call the callback function!
 }
 buy(products[1], function(err){
     if(err){
