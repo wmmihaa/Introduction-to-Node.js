@@ -97,4 +97,5 @@ One down, two to go...
 * Update the request operation to **post()** (and **delete()** if you’ve implemented it) 
 
 Result should look like this:
+
 <img src="http://microservicebus.blob.core.windows.net/sample/hol4.jpg"/>
