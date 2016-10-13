@@ -17,8 +17,12 @@ The course includes 10 hands-on-labs covering the following modules:
 
 All HOL material is found in the [manuals](manuals) folder.
 
-The course material is free for individual use as defined in the [license](License). Please note that the license does not cover trainer led sessions.
+The course material is free for individual use as defined in the [license](License). Please note that the license does not cover trainer led sessions. If you intend to use the material, along with slidedecks, speaker notes and demos, for training sessions, please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/).
 
-For trainer led sessions in Sweden, please contact [**AddSkills/Cornerstone**](http://www.cornerstone.se/). For other regions please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/)
+## For trainer led sessions in Sweden 
+Please contact [**AddSkills/Cornerstone**](http://www.cornerstone.se/). 
 
-If you intend to use the material, along with slidedecks, speaker notes and demos, for training sessions, please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/).
+## For other regions 
+Please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/)
+
+
