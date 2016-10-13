@@ -88,7 +88,7 @@ var bodyParser   = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 ```
-To add the body to the products collection, use the **.push** function on the collection, eg.
+The new product sent by the client (Postman), is available as **req.body**. To add it to the products collection, use the **.push** function on the collection, eg.
 ```js
 contacts.push(johnSmith);
 ```
