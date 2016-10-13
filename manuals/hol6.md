@@ -48,7 +48,7 @@ eg startnode -c ABC123 -n laptop
 
 The node should startup with no errors:
 
-<img src="http://microservicebus.blob.core.windows.net/sample/hol6_node.jpg" alt="Drawing" style="height: 100px;"/>
+<img src="http://microservicebus.blob.core.windows.net/sample/hol7_node.jpg" alt="Drawing" style="height: 100px;"/>
 
 Please note that no services are started.
 
@@ -70,7 +70,7 @@ The scenario you’re going to build is started by a simulated thermometer senso
 * **MongoDb** service (*Outbound Services*) 
 * **Send mail** service (*Outbound Services*)  
 
-<img src="https://microservicebus.blob.core.windows.net/sample/hol6_flow.jpg" alt="Drawing" style="height: 100px;"/>
+<img src="https://microservicebus.blob.core.windows.net/sample/hol7_flow.jpg" alt="Drawing" style="height: 100px;"/>
 
 1. *Temperature readings are received from the simulated thermometer sensor*
 2. *The temperature readings is transformed to a MongoDb Insert Message*
