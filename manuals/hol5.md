@@ -52,13 +52,20 @@ products.findOne( {id:id}, function(err, product) {
 #### To insert a product to a collection, use this syntax:
 ```js
 products.insert(req.body, function (err, ret) {  
- // respond from here...
+  res.send(ret);
 });
 ```
 
  
 ## Try it out
-Use Postman as you did in Hol3.
+Use Postman as you did in Hol3. YOu can start by inserting the whole collection:
+```js
+[
+    {"id":1, "name":"Fazer Kexchoklad", "price":12.4},
+    {"id":2, "name":"Snickers", "price":8.2},
+    {"id":3, "name":"Dajm", "price":19.0}
+]
+```
 
 ## Optional
 Update your unit test to work with the new data. Don't forget to update the require statement at the top to use *hol5.js*
