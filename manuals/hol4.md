@@ -95,3 +95,6 @@ One down, two to go...
 * Copy the whole describe section for each test. 
 * Update the options object with **uri** and **json** (the json field is only used or the payload of POST operations).
 * Update the request operation to **post()** (and **delete()** if you’ve implemented it) 
+
+Result should look like this:
+<img src="http://microservicebus.blob.core.windows.net/sample/hol4.jpg"/>
