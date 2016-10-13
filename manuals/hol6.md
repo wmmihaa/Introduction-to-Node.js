@@ -1,8 +1,10 @@
 # Introduction to Node.js
 # HOL6 – Building and IoT solution using Node.js
 ## Description
-**IoT**, or *Internet Of Things* is about small devices capturing data and pushing that data to some central hub. From the hub the data might get forwarded to some data store or reporting service where its later analyzed and put to good use. This course won’t be able to cover everything about **IoT** it will give you a general understanding.
+**IoT**, or *Internet Of Things* is about small devices capturing data and pushing that data to some central hub. From the hub the data might get forwarded to some data store or reporting service where its later analyzed and put to good use. This course won’t be able to cover everything about **IoT** but it will give you a general understanding.
+
 Node.js is great for IoT since it can run on almost every platform, from small devices to data centers. Another great advantage is the massive community and the NPM infrastructure which makes it easy to find implementations of how to read and interact with different sensors. Sensors are typically what feeds the device with data. 
+
 Since we don’t have and sensors (nor devices for that matter) for this tutorial, we’re going to rely on simulated sensors.
 
 ##Setup
