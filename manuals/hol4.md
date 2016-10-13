@@ -26,7 +26,7 @@ You are now going to make four tests:
 
 ## Setup
 * Open a command prompt from VS Code by hitting CTRL+Shift+C
-* Import package dependencies by typing **npm install mocha chai --save-dev**
+* Import package dependencies by typing **npm install mocha chai request --save-dev**
 * Open the **package.json** file in VS Code, remove the existing test line and add a **test** to the **script** section:
 ```js
   "scripts": {
