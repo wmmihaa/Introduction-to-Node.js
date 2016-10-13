@@ -31,7 +31,7 @@ This step will now install an NPM package which will serve as our generic device
 ## Exersice
 
 ### Create a node
-A **Node** is the application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*.
+In the microServiceBus hub, a **Node** referes to the application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*.
 
 1. Navigate to the [Nodes]( https://www.microservicebus.com/Nodes) page using the menu on the upper left corner.
 2. Click the “Create new node” button, and give it a name, eg “laptop”
@@ -40,7 +40,7 @@ A **Node** is the application that will run on the device. The “node” is res
 
 You have now configured a node on your organization, and it’s time to start it up. The NPM package you installed earlier is a generic client which hasn’t been given credentials to log in to your organization. To initiate the node…
 
-1. click the “**Generate**” button to receive a temporary code.
+1. Still on the Nodes page, click the “**Generate**” button to receive a temporary code.
 2. Open a new terminal window and type: **startnode -c [YOUR CODE] -n [NAME OF NODE]**
 ```js
 eg startnode -c ABC123 -n laptop
