@@ -20,11 +20,12 @@ For this lab we’re going to use microServiceBus.com as our hub. If you haven't
 
 ### Download the device package
 With your organization created, you’re ready to create your first IoT scenarios. But before we begin, we need to make our device ready. Since we don't have a device, we'll use your laptop and run the device package from a command prompt/terminal. 
-* Create a new folder and name it HOL6
-* Open a command prompt/terminal and navigate to the folder
-* Type **npm install microservicebus.node -g**
+* Open a command prompt/terminal and type:
+```
+npm install microservicebus.node -g
+```
 
-This step will now install an NPM package which will serve as our generic device application. **DON'T WAIT FOR THE PACKAGE TO COMPLETE. CONTINUE WITH THE EXERCISE** 
+This step will now install an NPM package which will serve as our generic device application. Don't wait for the the package to complete, just continue with the exercise.
 
 ## Exersice
 
