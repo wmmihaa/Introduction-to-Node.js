@@ -4,14 +4,14 @@
 MongoDB is one of the most commonly used databases for Node.js, and during this lab we are going to move the static **products** collection to one in MongoDB. Preceding this exercise, you should have MongoDB installed, but before we start you’ll need to do some setup.
 ## Before you begin
 * Install the **mongodb** npm package (you know how right?)
-* Create a folder called *MongoDBLab*
+* Create a new folder called *MongoDB* in your course folder.
 * Open the MongoDB installation folder and browse the bin folder (*C:\Program Files\MongoDB\Server\3.2\bin on Windows*)
-* Copy all files to the folder you created in step 1
-* In the *MongoDBLab* folder, create a new directory called **data**.
-* Open a console/terminal and browse to the *MongoDBLab* folder
-* Type **mongod -dbpath ./data --httpinterface –rest** and hit ENTER
+* Copy all files to the folder you created in previous step.
+* In the new *MongoDB* folder, create a new directory called **data\db**. Eg "mkdir ./data/db"
+* Open a console/terminal and browse to the new *MongoDB* folder
+* Type **mongod --httpinterface --rest** and hit ENTER
 
-You should now have MongoDB server started and you should be able to browse to http://localhost:28017/ using your favorite browser.
+You should now have MongoDB server started and you should be able to browse to [http://localhost:28017/](http://localhost:28017/) using your favorite browser.
 
 ## Exercise 
 1. Create a new file called *hol5.js* and copy the entire content from *hol3.js*
