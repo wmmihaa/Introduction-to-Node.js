@@ -13,7 +13,7 @@ For this exercise we begin with an existing site that has been created for you. 
 
 ### Resources
 #### /server.js
-This is the starting point of the project. Note that the this is where we set the view engine.
+This is the starting point of the project. Note that this is where we set the view engine.
 ```js
 app.set("view engine", "vash");
 ```
