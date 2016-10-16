@@ -3,7 +3,7 @@
 ## Description
 In this lab you are going to learn how to work with Node Package Manager (**NPM**). You are going to import the **colors** package and use it make your end-user experience a bit more delightful.
 ## Setup
-* Create a new file called *hol2.js* and copy the content from *hol1.js*. Or just continue with hol1.js.
+* Create a new file called *hol2.js* and copy the content from *hol1.js*.
 * Navigate to https://www.npmjs.com/
 * Search for colors, and select the first one (from marak)
 * Read through the **Usage** section
@@ -13,7 +13,7 @@ In this lab you are going to learn how to work with Node Package Manager (**NPM*
 * Also in VS Code, open the *package.json* file and note that the *dependencies* section has been updated with the installed package
 
 ## Exercise
-In the *hol2.js* file, add the require statement at the top:
+In the *hol2.js* file, add the require statement at the top after ```'use strict'``` statement.:
 ```js
 'use strict'
 require("colors");
