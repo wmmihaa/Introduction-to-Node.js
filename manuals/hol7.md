@@ -51,7 +51,7 @@ In the homeController we have:
 ```js
 res.render("home/index", {title:"Home"});
 ```
-This means we can go this in the view:
+This means we can do this in the view:
 ```html
 <h1>@model.title</h1>
 ```
