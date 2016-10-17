@@ -6,7 +6,7 @@ When you’re done, you’ll be displaying a graph showing the average temperatu
 
 ## Setup
 * In Visual Studio Code click *File* -> *Open Folder...*, browse to the **Introduction-to-Node.js\hol7 folder** and click *Select*.
-* Open a command prompt/terminal and type **npm express mongodb vash --save**
+* Open a command prompt/terminal and type **npm install express mongodb vash --save**
 
 ## Familiarize yourself with the project
 For this exercise we begin with an existing site that has been created for you. In VS Code, start by hitting **F5** and browse to [http://localhost:3000]( http://localhost:3000) to make sure the site is working.
