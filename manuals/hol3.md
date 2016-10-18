@@ -9,22 +9,10 @@ In this lab you are going to build a Web API providing a RESTful interface to a 
 
 ## Before you begin
 As explained earlier, **express** is a web server framework provided through NPM. You will use **express** to create a web application that will listen for incoming requests. This can easily be done by:
-### 1.	Create the web application
-```js
-var express = require('express');
-var app = express();
-```
-### 2.	Tell the web application to listen for some input:
-```js
-app.get('/', function (req, res) {
-    res.send('<h1>Welcome to HOL #3</h1>')
-});
-```
-### 3.	Set the app to listen on a port:
-```js
-app.listen(8080);
-```
-Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to [http://localhost:8080](http://localhost:8080).
+### Create the web application
+Navigate to the [express](https://www.npmjs.com/package/express) npm page, and copy the sample to *hol3.js*.  
+
+Try it out by opening a console using **CTRL+Shift+C** and type **node hol3.js**. Next, open a browser and navigate to [http://localhost:3000](http://localhost:3000).
 
 In the next module, we’re going to look into all this in more depth, but for now this is all we need to get started.
 
@@ -53,7 +41,7 @@ Next, use the response object (*res*) to send back the entire **products** colle
 This time try it out using **Postman**. Open Postman and type *http://localhost:8080/products* into the address field, and hit *Send*.
 
 ### Add a request handler to query for a specific product
-This time we’re going to let the user query a specific product by adding a *query parameter*. Since the uri to this call endpoint is the same as the one we just created, we need to update it to support a request like *http://localhost:8080/products?id=3* but still handle *http://localhost:8080/products*. 
+This time we’re going to let the user query a specific product by adding a *query parameter*. Since the uri to this call endpoint is the same as the one we just created, we need to update it to support a request like *http://localhost:8080/products?id=3* but still handle *http://localhost:3000/products*. 
 Update the callback function by checking if the query exists by using the **req.query.id**:
 ```js
 if (req.query.id) {
@@ -74,7 +62,7 @@ var wanted = items.filter(function (item)
 Use a the same approach to find the matching product.
 
 #### Try it out
-Again, use Postman to verify that you can query using http://localhost:8080/products?id=3.
+Again, use Postman to verify that you can query using http://localhost:3000/products?id=3.
 
 ### Add a request handler to add a new product
 To add an item using REST you should use the **POST** verb. And just as the *app* object has **get** function, it also has a **post** function. 
