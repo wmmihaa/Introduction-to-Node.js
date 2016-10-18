@@ -7,7 +7,7 @@ In this lab you will create a function to buy a product and withdraw the price f
 * Create a folder and name it **Introduction to Node.js**
 * Open a command prompt and navigate to the folder
 * Type ”npm init” and answer all questions by hitting **Enter**
-* Type ”code [your folder] hol1.js”, eg **code "c:\temp\Introduction to Node.js" hol1.js**
+* Open Visual Studio Code and navigate to the folder using the file menu.
 * Navigate to [hol1.js](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/start/hol1.js) and copy the content to your hol1.js file
 
 ## Exercise
