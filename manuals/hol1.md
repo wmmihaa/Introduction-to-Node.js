@@ -8,6 +8,9 @@ In this lab you will create a function to buy a product and withdraw the price f
 * Create a folder and name it **"Introduction to Node.js"**
 * Open a command prompt and navigate to the folder
 * Clone this repo into the folder
+```
+git clone https://github.com/wmmihaa/Introduction-to-Node.js.git
+```
 * Create another folder inside the *Introduction to Node.js* folder and name it **"Labs"**.
 * Navigate to the *Labs* folder and type ”npm init” and answer all questions by hitting **Enter**
 * Open Visual Studio Code and navigate to the folder using the file menu.
