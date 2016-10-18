@@ -7,9 +7,11 @@ In this lab you will create a function to buy a product and withdraw the price f
 ## Setup
 * Create a folder and name it **Introduction to Node.js**
 * Open a command prompt and navigate to the folder
-* Type ”npm init” and answer all questions by hitting **Enter**
+* Clone this repo into the folder
+* Create another folder inside the *Introduction to Node.js* folder and name it **Labs**.
+* Navigate to the *Labs* folder and type ”npm init” and answer all questions by hitting **Enter**
 * Open Visual Studio Code and navigate to the folder using the file menu.
-* Navigate to [hol1.js](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/start/hol1.js) and copy the content to your hol1.js file
+* Navigate to [hol1.js](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/start/hol1.js) and copy the **hol1.js** file into your *labs* forlder.
 
 ## Exercise
 For this lab, you are going to implement three functions and it's recommended to go about this by implementing the functions from the top down, starting with the **withDraw** function, then the **calculateVAT** function and finish up with the **buy** function. __Each function has comments about what is expected to be done.__ Brackets "[]" are used in the comments to refer to fields and paramaters.
