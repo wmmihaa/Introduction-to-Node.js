@@ -62,7 +62,7 @@ describe("Get all products", function () {
         // Configure the call with content-type and uri
         var options = {
             headers: { "Content-Type": "application/json"},
-            uri: 'http://localhost:8080/products',
+            uri: 'http://localhost:3000/products',
             json: {}
         };
         // Make call
