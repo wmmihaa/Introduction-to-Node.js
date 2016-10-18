@@ -41,7 +41,3 @@ buy(products[1], function(err){
         console.log("Your balance is " + accountBalance.toFixed(2) + " SEK");
     }
 });
-    // Expected output:
-    // You bought a Snickers for 8.20 SEK
-    // VAT: 1.64 SEK
-    // Your balance is 91.8 SEK 
