@@ -5,7 +5,7 @@ MongoDB is one of the most commonly used databases for Node.js, and during this 
 ## Before you begin
 * Install the **mongodb** npm package (you know how right?)
 * Create a new folder called *MongoDB* in your course folder.
-* Open the MongoDB installation folder and browse the bin folder (*C:\Program Files\MongoDB\Server\3.2\bin on Windows*)
+* Open the MongoDB installation folder and browse the bin folder (default *C:\Program Files\MongoDB\Server\3.2\bin on Windows*, */usr/local/mongodb* on Mac OS X)
 * Copy all files to the folder you created in previous step.
 * In the new *MongoDB* folder, create a new directory called **data\db**. Eg "mkdir .\data\db"
 * Open a console/terminal and browse to the new *MongoDB* folder
