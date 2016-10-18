@@ -5,6 +5,7 @@ This training course will help you discover how the Node framework can help you 
 The course includes 10 hands-on-labs covering the following modules:
 
 ### Day 1
+*JavaScript and basic usage of Node.js*
 #### [Module 1](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/GetStarted.md): Getting started (tools etc)
 #### Module 2: What is Node.Js
 #### [Module 3](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol1.md): Working with JavaScript
@@ -13,6 +14,7 @@ The course includes 10 hands-on-labs covering the following modules:
 #### [Module 6](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol4.md): Unit testing
 
 ### Day 2
+*Working with data, web sites and the cloud*
 #### [Module 7](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol5.md): Working with data
 #### [Module 8](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol6.md): Build IoT solutions using Node.js
 #### [Module 9](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol7.md): Build Web applications using Node.js
