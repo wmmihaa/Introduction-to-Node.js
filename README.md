@@ -4,16 +4,19 @@ This training course will help you discover how the Node framework can help you 
 
 The course includes 10 hands-on-labs covering the following modules:
 
-### [Module 1](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/GetStarted.md): Getting started (tools etc)
-### Module 2: What is Node.Js
-### [Module 3](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol1.md): Working with JavaScript
-### [Module 4](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol2.md): Node Package Manager (NPM)
-### [Module 5](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol3.md): Building Web API’s using Node.js
-### [Module 6](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol4.md): Unit testing
-### [Module 7](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol5.md): Working with data
-### [Module 8](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol6.md): Build IoT solutions using Node.js
-### [Module 9](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol7.md): Build Web applications using Node.js
-### [Module 10](): Hosting Node.js in the cloud
+### Day 1
+#### [Module 1](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/GetStarted.md): Getting started (tools etc)
+#### Module 2: What is Node.Js
+#### [Module 3](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol1.md): Working with JavaScript
+#### [Module 4](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol2.md): Node Package Manager (NPM)
+#### [Module 5](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol3.md): Building Web API’s using Node.js
+#### [Module 6](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol4.md): Unit testing
+
+### Day 2
+#### [Module 7](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol5.md): Working with data
+#### [Module 8](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol6.md): Build IoT solutions using Node.js
+#### [Module 9](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol7.md): Build Web applications using Node.js
+#### [Module 10](): Hosting Node.js in the cloud
 
 All HOL material is found in the [manuals](manuals) folder.
 
