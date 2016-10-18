@@ -9,7 +9,9 @@ Since we don’t have and sensors (nor devices for that matter) for this tutoria
 
 ##Setup
 ### Set up the hub
-For this lab we’re going to use microServiceBus.com as our hub. If you haven't already set up your account and organization, follow the instructions below.
+For this lab we’re going to use Azure IoT as the hub and microServiceBus.com to manage the device. To prevent you from having to set up an Azure IoT subscription you’ll be using an existing Azure IoT hub provided by microServiceBus.com.
+
+For more information about [Azure IoT Suite](https://azure.microsoft.com/en-us/suites/iot-suite).
 
 1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
