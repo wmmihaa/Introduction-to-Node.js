@@ -12,7 +12,7 @@ In this lab you will create a function to buy a product and withdraw the price f
 git clone https://github.com/wmmihaa/Introduction-to-Node.js.git
 ```
 * Create another folder inside the *Introduction to Node.js* folder and name it **"Labs"**.
-* Navigate to the *Labs* folder and type ”npm init” and answer all questions by hitting **Enter**
+* Change the directory to the *Labs* folder and type ”npm init” and answer all questions by hitting **Enter**
 * Open Visual Studio Code and navigate to the folder using the file menu.
 * Navigate to [hol1.js](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/start/hol1.js) and copy the **hol1.js** file into your *labs* forlder.
 
