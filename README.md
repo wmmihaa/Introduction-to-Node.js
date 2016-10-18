@@ -20,7 +20,7 @@ The course includes 10 hands-on-labs covering the following modules:
 #### [Module 9](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/manuals/hol7.md): Build Web applications using Node.js
 #### [Module 10](): Hosting Node.js in the cloud
 
-
+## Usage
 All HOL material is found in the [manuals](manuals) folder.
 
 The course material is free for individual use as defined in the [license](License). Please note that the license does not cover trainer led sessions. If you intend to use the material, along with slidedecks, speaker notes and demos, for training sessions, please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/).
