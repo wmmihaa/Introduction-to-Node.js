@@ -5,10 +5,10 @@ This lab is about getting you comfortable with JavaScript. We assume you have so
 
 In this lab you will create a function to buy a product and withdraw the price from an account balance. You’ll be given an existing script as a starting point.
 ## Setup
-* Create a folder and name it **Introduction to Node.js**
+* Create a folder and name it **"Introduction to Node.js"**
 * Open a command prompt and navigate to the folder
 * Clone this repo into the folder
-* Create another folder inside the *Introduction to Node.js* folder and name it **Labs**.
+* Create another folder inside the *Introduction to Node.js* folder and name it **"Labs"**.
 * Navigate to the *Labs* folder and type ”npm init” and answer all questions by hitting **Enter**
 * Open Visual Studio Code and navigate to the folder using the file menu.
 * Navigate to [hol1.js](https://github.com/wmmihaa/Introduction-to-Node.js/blob/master/start/hol1.js) and copy the **hol1.js** file into your *labs* forlder.
