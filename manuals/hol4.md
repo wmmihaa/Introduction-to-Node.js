@@ -13,7 +13,7 @@ You are now going to make four tests:
 **2. Get product with id = 3**  
 &nbsp;&nbsp;*should execute without errors*  
 &nbsp;&nbsp;*should return an http status 200*  
-&nbsp;&nbsp;*should return "Dajm"*  
+&nbsp;&nbsp;*should return "Daim"*  
 
 **3. Add one product**  
 &nbsp;&nbsp;*should execute without errors*  
