@@ -1,9 +1,9 @@
 'use strict'
 const VAT = 0.2;
 var products = [
-    {id:1, name:"Fazer Kexchoklad", price:12.4},
+    {id:1, name:"Twix", price:12.4},
     {id:2, name:"Snickers", price:8.2},
-    {id:3, name:"Dajm", price:19.0}
+    {id:3, name:"Daim", price:19.0}
 ]
 
 var accountBalance = 10;
