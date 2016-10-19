@@ -19,7 +19,7 @@ In the next module, we’re going to look into all this in more depth, but for n
 When you're done, hot **CTRL+C** to stop it.
 
 ## Exercise
-Before we beging, we need some data. For now, we'll just use a static collection of products:
+Before we begin, we need some data. For now, we'll just use a static collection of products:
 ```js
 var products = [
     {id:1, name:"Fazer Kexchoklad", price:12.4},
