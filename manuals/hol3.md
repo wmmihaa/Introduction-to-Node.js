@@ -90,7 +90,7 @@ Using Postman, change the VERB from GET to **POST** and remove the query from th
 ```js
 {
     "id": 4,
-    "name": "Fransk norgat",
+    "name": "KitKat",
     "price": 8.2
 }
 ```
