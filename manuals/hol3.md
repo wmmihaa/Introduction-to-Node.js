@@ -101,7 +101,7 @@ Hit **Send**, and verify that your response indicates the increased number of pr
 ### Optional 1
 Quering for a product that doesn't exist will cause an exception. Update the GET handler to respond with status code 404:
 ```js
-res.status(404).send('Product not found');
+    res.statusStatus(404);
 ```
 ### Optional 2
 Add a DELETE handler 
