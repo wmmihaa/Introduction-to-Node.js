@@ -38,10 +38,10 @@ Copy the existing handler and change the uri to match the expected request.
 Next, use the response object (*res*) to send back the entire **products** collection.
 
 #### Try it out
-This time try it out using **Postman**. Open Postman and type *http://localhost:8080/products* into the address field, and hit *Send*.
+This time try it out using **Postman**. Open Postman and type *http://localhost:3000/products* into the address field, and hit *Send*.
 
 ### Add a request handler to query for a specific product
-This time we’re going to let the user query a specific product by adding a *query parameter*. Since the uri to this call endpoint is the same as the one we just created, we need to update it to support a request like *http://localhost:8080/products?id=3* but still handle *http://localhost:3000/products*. 
+This time we’re going to let the user query a specific product by adding a *query parameter*. Since the uri to this call endpoint is the same as the one we just created, we need to update it to support a request like *http://localhost:3000/products?id=3* but still handle *http://localhost:3000/products*. 
 Update the callback function by checking if the query exists by using the **req.query.id**:
 ```js
 if (req.query.id) {
