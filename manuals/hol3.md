@@ -22,9 +22,9 @@ When you're done, hot **CTRL+C** to stop it.
 Before we begin, we need some data. For now, we'll just use a static collection of products:
 ```js
 var products = [
-    {id:1, name:"Fazer Kexchoklad", price:12.4},
-    {id:2, name:"Snickers", price:8.2},
-    {id:3, name:"Dajm", price:19.0}
+    {id:1, name:"Twix", price:2.9},
+    {id:2, name:"Snickers", price:2.5},
+    {id:3, name:"Daim", price:3.2}
 ];
 ```
 Copy the segment above after the initial declarations in the hol3.js file.
