@@ -22,9 +22,9 @@ For this lab, you are going to implement three functions and it's recommended to
 To run the sample, open a command prompt/terminal from Visual Studio Code by using (**CTRL+Shift+C**) Type **node hol1.js**.
 If all goes well, you should see an output like this:
 
-**You bought a Snickers for 8.20 SEK**  
-**VAT: 1.64 SEK**  
-**Your balance is 91.80 SEK**  
+**You bought a Snickers for $2.5**  
+**VAT: $0.5**  
+**Your balance is $0.5**  
 
 ## Debugging
 Sometimes we need to debug our code by setting breakpoints and evaluate values of variables and more. Fortunately, Visual Studio Code is our friend. Set a breakpoint in your code and hit F5 to start debugging. The first time you debug an application, Visual Studio Code will prompt you to set the platform. Select **Node.js**, close the *launch.js* and hit **F5** again.
