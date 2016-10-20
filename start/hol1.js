@@ -1,12 +1,12 @@
 'use strict'
 const VAT = 0.2;
 var products = [
-    {id:1, name:"Twix", price:12.4},
-    {id:2, name:"Snickers", price:8.2},
-    {id:3, name:"Daim", price:19.0}
+    {id:1, name:"Twix", price:2.9},
+    {id:2, name:"Snickers", price:2.5},
+    {id:3, name:"Daim", price:3.2}
 ]
 
-var accountBalance = 10;
+var accountBalance = 3;
 
 function withdraw(amount, callback){
     // If [amount] is more than [accountBalance] use the 
@@ -29,7 +29,7 @@ function buy(product, callback){
     //   receive the tax. 
     // Build up the respose messages using console.log()
     // Expected output:
-    // You bought a Snickers for 8.20 SEK
+    // You bought a Snickers for $8.20
     // VAT: 1.64 SEK
     // Don't forget to call the callback function!
 }
@@ -38,6 +38,6 @@ buy(products[1], function(err){
         console.log(err);
     }
     else{
-        console.log("Your balance is " + accountBalance.toFixed(2) + " SEK");
+        console.log("Your balance is $" + accountBalance.toFixed(2));
     }
 });

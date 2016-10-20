@@ -3,10 +3,10 @@ var app = express();
 var bodyParser   = require('body-parser');
 
 var products = [
-    {id:1, name:"Fazer Kexchoklad", price:12.4},
-    {id:2, name:"Snickers", price:8.2},
-    {id:3, name:"Dajm", price:19.0}
-];
+    {id:1, name:"Twix", price:2.9},
+    {id:2, name:"Snickers", price:2.5},
+    {id:3, name:"Daim", price:3.2}
+]
 
 // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({extended: true}));
