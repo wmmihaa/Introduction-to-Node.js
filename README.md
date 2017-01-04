@@ -26,7 +26,7 @@ All HOL material is found in the [manuals](manuals) folder.
 The course material is free for individual use as defined in the [license](License). Please note that the license does not cover trainer led sessions. If you intend to use the material, along with slidedecks, speaker notes and demos, for training sessions, please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/).
 
 ## For instructor-led training in Sweden 
-Please contact [**AddSkills/Cornerstone**](http://www.cornerstone.se/). 
+Please contact [**AddSkills/Cornerstone**](http://www.cornerstone.se/kurser/systemutveckling/webbutveckling/developing-with-node.js). 
 
 ## For other regions 
 Please contact [**XLENT Integration & Services**] (https://www.xlent.se/expertis/it-konsulttjanster-och-ataganden/integration/)
