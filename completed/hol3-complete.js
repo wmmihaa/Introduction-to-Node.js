@@ -32,4 +32,4 @@ app.post("/products", function(req,res){
     res.send({count:products.length});
 })
 
-app.listen(8080);
+app.listen(3000);
