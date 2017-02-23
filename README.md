@@ -1,6 +1,6 @@
 <h1><img src="https://microservicebus.blob.core.windows.net/sample/nodejs-256.png" alt="Node.js"/>&nbsp;Introduction to Node.js</h1>
 
-This training course will help you discover how the Node framework can help you write server-side code and build lightweight, scalable network applications. The course is an open source and covering everything from the basics of using JavaScript and Node.js to how to use it with cloud services like Azure Service Bus, Web sites and even in IoT scenarios. 
+This training course will help you discover how the Node framework can help you write server-side code and build lightweight, scalable network applications. The course is an open source and covering everything from the basics of using JavaScript and Node.js to how to use it with cloud services like Azure Service Bus, Websites and even in IoT scenarios. 
 
 The course includes 10 hands-on-labs covering the following modules:
 
