@@ -28,7 +28,7 @@ The Git client for Windows can be installed [here]( https://git-scm.com/download
 
 The tutorial includes one lab on IoT (Internet Of Things), where you’ll be using [microServiceBus.com]( https://microServiceBus.com). To speed things up, prepare yourself by creating and account and organization if you don’t already have one.
 
-1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
+1. Navigate to [www.microServiceBus.com](https://microservicebus.com) and click the “**Register**” button in the upper right corner. 
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
 3. Check your mail box, open the confirmation mail and click the “**Register**” link. 
 4. Log in to the microServiceBus.com site using the credentials you supplied in step 2. 
