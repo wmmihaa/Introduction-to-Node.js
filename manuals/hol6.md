@@ -17,7 +17,7 @@ For more information about [Azure IoT Suite](https://azure.microsoft.com/en-us/s
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
 3. Check your mail box, open the confirmation mail and click the “**Register**” link. 
 4. Log in to the microServiceBus.com site using the credentials you supplied in step 2. 
-5. Select option 2 and provide a name and description of your organization. 
+5. Select "Option 1. Use microServiceBus.com" (and provide a name and description of your organization. 
 6. Uncheck the “*Add sample scenarios*” checkbox and click *Create organization* 
 
 ### Download the device package
