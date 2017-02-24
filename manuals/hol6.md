@@ -13,7 +13,7 @@ For this lab we’re going to use **Azure IoT** as the hub and microServiceBus.c
 
 For more information about [Azure IoT Suite](https://azure.microsoft.com/en-us/suites/iot-suite).
 
-1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
+1. Navigate to [www.microServiceBus.com](https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
 3. Check your mail box, open the confirmation mail and click the “**Register**” link. 
 4. Log in to the microServiceBus.com site using the credentials you supplied in step 2. 
