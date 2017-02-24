@@ -63,8 +63,6 @@ After the *Flow* has been created, a flow designer will appear. On the left you�
 
 The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
 
-The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
-
 1. Start out by dragging a **Simulator Temperature Sensor** from the toolbox (*Inbound*) to the designer canvas.
 2. Next drag the following Services to the canvas and arrange the according to the image below. Attach them together by dragging the “handle" of each service to the next: 
 
