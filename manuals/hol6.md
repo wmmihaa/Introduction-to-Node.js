@@ -33,7 +33,7 @@ This step will now install an NPM package which will serve as our generic device
 ## Exersice
 
 ### Create a node
-In the microServiceBus portal, a **Node** referes to the _gateway_ or _agent_ application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*.
+In the microServiceBus portal, a **Node** referes to the _gateway_ or _agent_ application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*. I your case, you'll be using a pre-existing free Azure IoT hub.
 
 1. Navigate to the [Nodes]( https://www.microservicebus.com/Nodes) page using the menu on the upper left corner.
 2. Click the “Create new node” button, and give it a name, eg “laptop”
