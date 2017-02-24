@@ -10,7 +10,7 @@ describe("Get all products", function () {
         // Configure the call with content-type and uri
         var options = {
             headers: { "Content-Type": "application/json"},
-            uri: 'http://localhost:8080/products',
+            uri: 'http://localhost:3000/products',
             json: {}
         };
         // Make call
@@ -37,7 +37,7 @@ describe("Get one product", function () {
     var result;
     
     before(function (done) {
-        request.get('http://localhost:8080/products?id=3', function (err, res, body) {
+        request.get('http://localhost:3000/products?id=3', function (err, res, body) {
             result = {err, res, body};   
             done();
         });
@@ -62,7 +62,7 @@ describe("Add one product", function () {
     before(function (done) {
         var options = {
             headers: { "Content-Type": "application/json"},
-            uri: 'http://localhost:8080/products',
+            uri: 'http://localhost:3000/products',
             json: {
                 id: 4,
                 name: "Fransk norgat",
@@ -88,7 +88,7 @@ describe("Get all products again", function () {
     var result;
     
     before(function (done) {
-        request.get('http://localhost:8080/products', function (err, res, body) {
+        request.get('http://localhost:3000/products', function (err, res, body) {
             result = {err, res, body};  
             done();
         });

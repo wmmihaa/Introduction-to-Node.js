@@ -54,4 +54,4 @@ app.post("/products", function(req,res){
 
 //var wanted = items.filter( function(item){return (item.age==18);} );
 
-app.listen(8080);
+app.listen(3000);

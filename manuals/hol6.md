@@ -13,11 +13,11 @@ For this lab we’re going to use **Azure IoT** as the hub and microServiceBus.c
 
 For more information about [Azure IoT Suite](https://azure.microsoft.com/en-us/suites/iot-suite).
 
-1. Navigate to [www.microServiceBus.com]( https:// microservicebus.com) and click the “**Register**” button in the upper right corner. 
+1. Navigate to [www.microServiceBus.com](https://microservicebus.com) and click the “**Register**” button in the upper right corner. 
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
 3. Check your mail box, open the confirmation mail and click the “**Register**” link. 
 4. Log in to the microServiceBus.com site using the credentials you supplied in step 2. 
-5. Select option 2 and provide a name and description of your organization. 
+5. Select "Option 1. Use microServiceBus.com" (and provide a name and description of your organization. 
 6. Uncheck the “*Add sample scenarios*” checkbox and click *Create organization* 
 
 ### Download the device package
@@ -33,7 +33,7 @@ This step will now install an NPM package which will serve as our generic device
 ## Exersice
 
 ### Create a node
-In the microServiceBus hub, a **Node** referes to the application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*.
+In the microServiceBus portal, a **Node** referes to the _gateway_ or _agent_ application that will run on the device. The “node” is responsible for interacting with the sensors attached to the device and also understands how to communicate with your *Hub*. I your case, you'll be using a pre-existing free Azure IoT hub.
 
 1. Navigate to the [Nodes]( https://www.microservicebus.com/Nodes) page using the menu on the upper left corner.
 2. Click the “Create new node” button, and give it a name, eg “laptop”
@@ -60,8 +60,6 @@ A **Flow** is where different devices can interact, sending messages from one de
 Begin with navigating to the **Flow page**, and click the **Create new** button. Give it a name, such as HOL6.
 
 After the *Flow* has been created, a flow designer will appear. On the left you’ll see *Services* grouped in **Inbound-**, **Outbound-** and **Other Services**. *Inbound* services are services that starts the flow, such as reading off a sensor. *Outbound* services are generally sending data somewhere else, as to a database. Sometime you need to write some custom script for which you can find the *Script* service among the *Other Services* category.
-
-The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
 
 The scenario you’re going to build is started by a simulated thermometer sensor (*Inbound Service*). Every reading gets forwarded to a MongoDB database. If the temperature exceeds a specified threshold an email gets sent to an administrator (you).
 
