@@ -32,7 +32,7 @@ Copy the segment above after the initial declarations in the hol3.js file.
 ### Add a request handler to query for all products
 You already have one request handler listening to the root of your site. This one was called when you browsed to localhost:3000. To prove this, set a breakpoint inside the *get* handler and start the application using VS Code (F5). Refresh the browser and examine the **req** and **res** objects.
 
-We are now ready to add another event handler. This handler is going to listen to http://localhost:3000**/products** and return all products in the **products** collection. 
+We are now ready to add another event handler. This handler is going to listen to http://localhost:3000/**products** and return all products in the **products** collection. 
 
 Copy the existing handler and change the uri to match the expected request.
 Next, use the response object (*res*) to send back the entire **products** collection.
