@@ -35,7 +35,7 @@ You already have one request handler listening to the root of your site. This on
 We are now ready to add another event handler. This handler is going to listen to http://localhost:3000/products and return all products in the **products** collection. 
 
 Copy the existing handler and change the uri to match the expected request.
-Next, use the response object (*res*) to send back the entire **products** collection.
+Next, use the response object (*res*) to send back the entire **products** collection (using the *send* function).
 
 #### Try it out
 This time try it out using **Postman**. Open Postman and type *http://localhost:3000/products* into the address field, and hit *Send*.
