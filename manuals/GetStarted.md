@@ -32,7 +32,7 @@ The tutorial includes one lab on IoT (Internet Of Things), where you’ll be usi
 2. Fill out your details, accept the terms and conditions and click “**Register**”. 
 3. Check your mail box, open the confirmation mail and click the “**Register**” link. 
 4. Log in to the microServiceBus.com site using the credentials you supplied in step 2. 
-5. Select option 1 (Use microServiceBus.com") and provide a name and description of your organization. 
+5. Select option 1 ("Use microServiceBus.com") and provide a name and description of your organization. 
 6. Uncheck the “*Add sample scenarios*” checkbox and click *Create organization*
 
 #
