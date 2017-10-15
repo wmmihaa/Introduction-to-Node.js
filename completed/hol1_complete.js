@@ -6,6 +6,7 @@ var products = [
     {id:3, name:"Daim", price:3.2}
 ]
 
+
 var accountBalance = 3;
 
 function withdraw(amount, callback){
