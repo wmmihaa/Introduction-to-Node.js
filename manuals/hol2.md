@@ -23,7 +23,7 @@ require("colors");
 
 Next, go through all outputs (*console.log*) and set an appropriate color. 
 
-###Tip
+### Tip
 To avoid having to set the color on each segment of outputted text (*Eg “Hello “ + name + “!”*), concatenate the whole string into one variable and set the color on the variable. Eg:
 ```js
 var text = "Hello " + name + "!";
